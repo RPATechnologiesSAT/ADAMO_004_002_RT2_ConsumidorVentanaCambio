@@ -1,0 +1,66 @@
+﻿{"Settings": [
+        {
+            "Name": "OrchestratorFolderName",
+            "Value": "Shared",
+            "Description": "Carpeta Orquestador"
+        },
+	    {
+            "Name": "OrchestratorQueueName",
+            "Value": "RevisionDSPs",
+            "Description": "Cola de ejecución de la que se recogerán los items que van a ser tratados."
+        },
+        {
+            "Name": "ExScreenshotsFolderPath",
+            "Value": "Exceptions_Screenshots",
+            "Description": "Carpeta para el almacenamiento de capturas de pantalla de error"
+        },
+	{
+            "Name": "BoolExecution",
+            "Value": "True",
+            "Description": "Booleano para indicar si se realiza o no la escritura de la tabla resumen de cada transaccion procesada al final de la ejecución."
+        },
+	    {
+            "Name": "PathDtExecution",
+            "Value": "Data/Summary",
+            "Description": "Carpeta para el almacenamiento de la tabla con el detalle de la ejecución de cada transacción."
+        },
+		 {
+            "Name": "RetryNumber",
+            "Value": "10",
+            "Description": "Valor para establecer el número de reintentos locales sobre la actividad RetryScope"
+        },
+        {
+            "Name": "DebugMode",
+            "Value": "True",
+            "Description": "Booleano en tipo string para realizar o evitar ciertas acciones segun el modo de ejecución. Por defecto, en true, no se ejecutará el cleaning Desktop."
+        },
+		{
+            "Name": "MaxTotalSystems",
+            "Value": 3,
+            "Description": "Número total de errores máximos permitidos. Cuando se alcance este número de errores durante el procesamiento de items de forma acumulada, la ejecución finalizará."
+        },
+		{
+		    "_Importante" : "'Nombre del asset de tipo credential que guarda las credenciales de inicio de sesión en Portanet",
+            "Name": "PortanetCredentialsAssetName",
+            "Value": "Credentials_Portanet",
+            "Description": "Nombre Asset Credenciales web Portanet" 
+        },
+		{
+		    "_Importante" : "'Nombre del asset de tipo credential que guarda las credenciales de inicio de sesión en OTRS",
+            "Name": "OTRSCredentialsAssetName",
+            "Value": "Credentials_OTRS",
+            "Description": "Nombre Asset Credenciales web OTRS" 
+        }
+    ],
+
+    "Assets": [
+        {
+            "Name": "URL_Portanet",
+            "Description": "URL de acceso a la web de Portanet"
+        },
+		{
+			"Name":"URL_OTRS",
+			"Description":"URL de acceso a la web de OTRS"
+		}
+    ]
+}

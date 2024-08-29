@@ -1,0 +1,392 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="RellenarNotaOTRS" this:RellenarNotaOTRS.in_CausaRechazo="Falta de correspondencia entre numeracion e identificador de proceso mayorista" this:RellenarNotaOTRS.in_TipoProceso="DSP2" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_CausaRechazo" Type="InArgument(x:String)" />
+    <x:Property Name="in_TipoProceso" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1768,3953</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>RellenarNotaOTRS_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="RellenarNotaOTRS" sap:VirtualizedContainerService.HintSize="682,3888" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="620,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'RellenarNotaOTRS' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="620,3415" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 1193550793-71901897X - Managed OTRS" sap:VirtualizedContainerService.HintSize="582,3165" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,2908" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Rellenando campos en nueva nota...&quot;]" />
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Body'" sap:VirtualizedContainerService.HintSize="486,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3411685#8380762" CVScreenId="b1117d4c-433d-4cb3-901a-5309576b1483" CvTextArea="1076, 548, 39, 12" CvTextArgument="Enter..." CvType="Text" DesignTimeRectangle="1057, 626, 794, 59" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='HTML' innertext='Editor*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' /&gt;&lt;webctrl tag='HTML' innertext='Editor*' type='' class='' aaname='' check:text='Editor, editor1html{cursor:text;*cursor:auto}&amp;#xA;img,input,textarea{cursor:default}.cke_editable{cursor:text}.cke_editable img,.cke_editable input,.cke_editable textarea{cursor:default}&amp;#xA;body.cke_editable { font-family:Geneva,Helvetica,Arial,sans-serif; font-size: 12px; }&amp;#xA;[data-cke-editorplaceholder]::before {position: absolute;opacity: .8;color: #aaa;content: attr( data-cke-editorplaceholder );}.cke_wysiwyg_div[data-cke-editorplaceholder]::before {margin-top: 1em;}&amp;#xA;.cke_editable form{border: 1px dotted #FF0000;padding: 2px;}&amp;#xA;&amp;#xA;img.cke_hidden{background-image: url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/forms/images/hiddenfield.gif?t=NB7A);background-position: center center;background-repeat: no-repeat;border: 1px solid #a9a9a9;width: 16px !important;height: 16px !important;}&amp;#xA;img.cke_iframe{background-image: url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/iframe/images/placeholder.png?t=NB7A);background-position: center center;background-repeat: no-repeat;border: 1px solid #a9a9a9;width: 80px;height: 80px;}&amp;#xA;.cke_contents_ltr a.cke_anchor,.cke_contents_ltr a.cke_anchor_empty,.cke_editable.cke_contents_ltr a[name],.cke_editable.cke_contents_ltr a[data-cke-saved-name]{background:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/link/images/anchor.png?t=NB7A) no-repeat left center;border:1px dotted #00f;background-size:16px;padding-left:18px;cursor:auto;}.cke_contents_ltr img.cke_anchor{background:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/link/images/anchor.png?t=NB7A) no-repeat left center;border:1px dotted #00f;background-size:16px;width:16px;min-height:15px;height:1.15em;vertical-align:text-bottom;}.cke_contents_rtl a.cke_anchor,.cke_contents_rtl a.cke_anchor_empty,.cke_editable.cke_contents_rtl a[name],.cke_editable.cke_contents_rtl a[data-cke-saved-name]{background:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/link/images/anchor.png?t=NB7A) no-repeat right center;border:1px dotted #00f;background-size:16px;padding-right:18px;cursor:auto;}.cke_contents_rtl img.cke_anchor{background:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/link/images/anchor.png?t=NB7A) no-repeat right center;border:1px dotted #00f;background-size:16px;width:16px;min-height:15px;height:1.15em;vertical-align:text-bottom;}&amp;#xA;div.cke_pagebreak{background:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/pagebreak/images/pagebreak.gif?t=NB7A) no-repeat center center !important;clear:both !important;width:100% !important;border-top:#999 1px dotted !important;border-bottom:#999 1px dotted !important;padding:0 !important;height:7px !important;cursor:default !important;}&amp;#xA;.cke_show_blocks h6:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h5:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h4:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h3:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h2:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks h1:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks blockquote:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks address:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks pre:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks div:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks p:not([contenteditable=false]):not(.cke_show_blocks_off){background-repeat:no-repeat;border:1px dotted gray;padding-top:8px}.cke_show_blocks h6:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_h6.png?t=NB7A)}.cke_show_blocks h5:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_h5.png?t=NB7A)}.cke_show_blocks h4:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_h4.png?t=NB7A)}.cke_show_blocks h3:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_h3.png?t=NB7A)}.cke_show_blocks h2:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_h2.png?t=NB7A)}.cke_show_blocks h1:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_h1.png?t=NB7A)}.cke_show_blocks blockquote:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_blockquote.png?t=NB7A)}.cke_show_blocks address:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_address.png?t=NB7A)}.cke_show_blocks pre:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_pre.png?t=NB7A)}.cke_show_blocks div:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_div.png?t=NB7A)}.cke_show_blocks p:not([contenteditable=false]):not(.cke_show_blocks_off){background-image:url(https://support.adamo.es/htdocs/js/thirdparty/ckeditor-4.22.1//plugins/showblocks/images/block_p.png?t=NB7A)}.cke_show_blocks.cke_contents_ltr h6:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h5:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h4:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h3:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h2:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr h1:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr blockquote:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr address:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr pre:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr div:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_ltr p:not([contenteditable=false]):not(.cke_show_blocks_off){background-position:top left;padding-left:8px}.cke_show_blocks.cke_contents_rtl h6:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h5:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h4:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h3:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h2:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl h1:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl blockquote:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl address:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl pre:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl div:not([contenteditable=false]):not(.cke_show_blocks_off),.cke_show_blocks.cke_contents_rtl p:not([contenteditable=false]):not(.cke_show_blocks_off){background-position:top right;padding-right:8px}&amp;#xA;.cke_show_borders  table.cke_show_border,.cke_show_borders  table.cke_show_border &amp;gt; tr &amp;gt; td, .cke_show_borders  table.cke_show_border &amp;gt; tr &amp;gt; th,.cke_show_borders  table.cke_show_border &amp;gt; tbody &amp;gt; tr &amp;gt; td, .cke_show_borders  table.cke_show_border &amp;gt; tbody &amp;gt; tr &amp;gt; th,.cke_show_borders  table.cke_show_border &amp;gt; thead &amp;gt; tr &amp;gt; td, .cke_show_borders  table.cke_show_border &amp;gt; thead &amp;gt; tr &amp;gt; th,.cke_show_borders  table.cke_show_border &amp;gt; tfoot &amp;gt; tr &amp;gt; td, .cke_show_borders  table.cke_show_border &amp;gt; tfoot &amp;gt; tr &amp;gt; th{border : #d3d3d3 1px dotted}&amp;#xA;.cke_widget_wrapper{position:relative;outline:none}.cke_widget_inline{display:inline-block}.cke_widget_wrapper:hover&amp;gt;.cke_widget_element{outline:2px solid #ffd25c;cursor:default}.cke_widget_wrapper:hover .cke_widget_editable{outline:2px solid #ffd25c}.cke_widget_wrapper.cke_widget_focused&amp;gt;.cke_widget_element,.cke_widget_wrapper .cke_widget_editable.cke_widget_editable_focused{outline:2px solid #47a4f5}.cke_widget_editable{cursor:text}.cke_widget_drag_handler_container{position:absolute;width:15px;height:0;display:block;opacity:0.75;transition:height 0s 0.2s;line-height:0}.cke_widget_wrapper:hover&amp;gt;.cke_widget_drag_handler_container{height:15px;transition:none}.cke_widget_drag_handler_container:hover{opacity:1}.cke_editable[contenteditable=&amp;quot;false&amp;quot;] .cke_widget_drag_handler_container{display:none;}img.cke_widget_drag_handler{cursor:move;width:15px;height:15px;display:inline-block}.cke_widget_mask{position:absolute;top:0;left:0;width:100%;height:100%;display:block}.cke_widget_partial_mask{position:absolute;display:block}.cke_editable.cke_widget_dragging, .cke_editable.cke_widget_dragging *{cursor:move !important}&amp;#xA;.cke_upload_uploading img{opacity: 0.3}&amp;#xA;.cke_image_nocaption{line-height:0}.cke_editable.cke_image_sw, .cke_editable.cke_image_sw *{cursor:sw-resize !important}.cke_editable.cke_image_se, .cke_editable.cke_image_se *{cursor' /&gt;" Guid="e520dc33-427e-4bf4-8c83-73e2a167a1b3" InformativeScreenshot="dc143c30b499f853850d8dbbc429ca84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="f3502ed3-8ae2-42ba-8155-e2783ef9bfdb" CvTextArea="1055, 198, 37, 15" CvTextArgument="* Body" CvType="Text" DesignTimeRectangle="1056, 495, 796, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='__BVID__8982' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__BVID__8982' tag='LABEL' type='' class='d-block required' aaname='Body' check:innerText='Body' /&gt;" Guid="9ba88523-15e7-4b05-ae9b-d67d9d2abd7f" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="486,154" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                <If Condition="[in_TipoProceso = &quot;DSP2&quot;]" DisplayName="Tipo Proceso?" sap:VirtualizedContainerService.HintSize="486,1580" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If.Then>
+                    <Sequence sap:VirtualizedContainerService.HintSize="452,1153" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="sd:DataTable" Name="dt_ListadoErroresDSP2" />
+                        <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_ListadoErroresDSP2]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="410,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Hoja1" WorkbookPath="Data\Input\ListadoErroresDSP2.xlsx" />
+                      <ui:LookupDataTable CellValue="{x:Null}" LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[dt_ListadoErroresDSP2]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="410,292" sap2010:WorkflowViewState.IdRef="LookupDataTable_1" LookupColumnName="DESCRIPCIÓN" LookupValue="[in_CausaRechazo]" RowIndex="[rowIndex]" />
+                      <If Condition="[rowIndex &gt;= 0]" DisplayName="Encontrado?" sap:VirtualizedContainerService.HintSize="410,605" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NSelectItem DisplayName="Select Item 'Service'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[dt_ListadoErroresDSP2(rowIndex)(&quot;SERVICIO AL QUE DEBE IR TICKET OTRS&quot;).tostring.replace(&quot; &quot;,&quot;&quot;)]" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V3">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="28">
+                                  <x:String>Accounting</x:String>
+                                  <x:String>Altas</x:String>
+                                  <x:String>Backoffice</x:String>
+                                  <x:String>Billing</x:String>
+                                  <x:String>Cancelaciones</x:String>
+                                  <x:String>CQIrojo</x:String>
+                                  <x:String>Customer Operations</x:String>
+                                  <x:String>GestionB2B Pdte Externo</x:String>
+                                  <x:String>GestionB2B Pdte Interno</x:String>
+                                  <x:String>I&amp;M</x:String>
+                                  <x:String>Implementations</x:String>
+                                  <x:String>Móvil</x:String>
+                                  <x:String>Noc</x:String>
+                                  <x:String>PortabilidadPortabilidad fijaAbiertaEn procesoEstado inicialPendientePort.ErrorProcesadoPortabilidad móvil</x:String>
+                                  <x:String>Portabilidad fijaAbiertaEn procesoEstado inicialPendientePort.ErrorProcesado</x:String>
+                                  <x:String>Abierta</x:String>
+                                  <x:String>En proceso</x:String>
+                                  <x:String>Estado inicial</x:String>
+                                  <x:String>Pendiente</x:String>
+                                  <x:String>Port.Error</x:String>
+                                  <x:String>Procesado</x:String>
+                                  <x:String>Portabilidad móvil</x:String>
+                                  <x:String>Recobros</x:String>
+                                  <x:String>Sales</x:String>
+                                  <x:String>Soporte</x:String>
+                                  <x:String>Soporte B2B</x:String>
+                                  <x:String>VoIP</x:String>
+                                  <x:String>Wholesale</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3411685#8380762" CVScreenId="69afa7ca-dc32-4c4b-8a4f-ebedaf158776" CvElementArea="1052, 443, 801, 42" CvType="InputBox" DesignTimeRectangle="1067, 448, 754, 33" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='__BVID__8881' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__BVID__8881' tag='INPUT' type='text' class='vue-treeselect__input' aaname='         Service         ' /&gt;" Guid="2d9c6487-bdfa-4c7a-8541-4aab1eb35f10" ImageBase64="" InformativeScreenshot="299bcc0ab1401b9682b6d81abf388c00.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="69afa7ca-dc32-4c4b-8a4f-ebedaf158776" CvTextArea="1055, 427, 42, 12" CvTextArgument="Service" CvType="Text" DesignTimeRectangle="1056, 424, 796, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='__BVID__8881' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__BVID__8881' tag='LABEL' type='' class='d-block' aaname='         Service         ' check:innerText='Service' /&gt;" Guid="1d2193a3-a249-4bbc-9c5e-a12944750f69" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Throw Exception="[new BusinessRuleException(&quot;No se han encontrado coincidencias para la causa de rechazo: &quot; +in_CausaRechazo)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NSelectItem DisplayName="Select Item 'Service'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Abierta" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V3">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="28">
+                            <x:String>Accounting</x:String>
+                            <x:String>Altas</x:String>
+                            <x:String>Backoffice</x:String>
+                            <x:String>Billing</x:String>
+                            <x:String>Cancelaciones</x:String>
+                            <x:String>CQIrojo</x:String>
+                            <x:String>Customer Operations</x:String>
+                            <x:String>GestionB2B Pdte Externo</x:String>
+                            <x:String>GestionB2B Pdte Interno</x:String>
+                            <x:String>I&amp;M</x:String>
+                            <x:String>Implementations</x:String>
+                            <x:String>Móvil</x:String>
+                            <x:String>Noc</x:String>
+                            <x:String>PortabilidadPortabilidad fijaAbiertaEn procesoEstado inicialPendientePort.ErrorProcesadoPortabilidad móvil</x:String>
+                            <x:String>Portabilidad fijaAbiertaEn procesoEstado inicialPendientePort.ErrorProcesado</x:String>
+                            <x:String>Abierta</x:String>
+                            <x:String>En proceso</x:String>
+                            <x:String>Estado inicial</x:String>
+                            <x:String>Pendiente</x:String>
+                            <x:String>Port.Error</x:String>
+                            <x:String>Procesado</x:String>
+                            <x:String>Portabilidad móvil</x:String>
+                            <x:String>Recobros</x:String>
+                            <x:String>Sales</x:String>
+                            <x:String>Soporte</x:String>
+                            <x:String>Soporte B2B</x:String>
+                            <x:String>VoIP</x:String>
+                            <x:String>Wholesale</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3411685#8380762" CVScreenId="69afa7ca-dc32-4c4b-8a4f-ebedaf158776" CvElementArea="1052, 443, 801, 42" CvType="InputBox" DesignTimeRectangle="1067, 448, 754, 33" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='__BVID__8881' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__BVID__8881' tag='INPUT' type='text' class='vue-treeselect__input' aaname='         Service         ' /&gt;" Guid="2d9c6487-bdfa-4c7a-8541-4aab1eb35f10" ImageBase64="" InformativeScreenshot="299bcc0ab1401b9682b6d81abf388c00.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="69afa7ca-dc32-4c4b-8a4f-ebedaf158776" CvTextArea="1055, 427, 42, 12" CvTextArgument="Service" CvType="Text" DesignTimeRectangle="1056, 424, 796, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='__BVID__8881' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__BVID__8881' tag='LABEL' type='' class='d-block' aaname='         Service         ' check:innerText='Service' /&gt;" Guid="1d2193a3-a249-4bbc-9c5e-a12944750f69" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NSelectItem.Target>
+                      </uix:NSelectItem>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="DEBUUUUUUUUG" ClickType="Single" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="486,188" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3411685#8380762" CVScreenId="ddb28346-2f01-42a9-aa2e-2f88e7dd17a4" CvElementArea="1674, 795, 84, 37" CvTextArea="1696, 807, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1697, 805, 38, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                 Cancel                 ' parentid='Layout__Content__Main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Cancel                 ' parentid='Layout__Content__Main' tag='SPAN' type='' class='' check:innerText='Cancel' /&gt;" Guid="430db712-1ab5-4d80-9f36-54dc989dc8f2" InformativeScreenshot="da0ff5c5c86db182b4879bc99c351cc5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="ddb28346-2f01-42a9-aa2e-2f88e7dd17a4" CvElementArea="1674, 795, 84, 37" CvTextArea="1696, 807, 39, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1676, 797, 80, 34" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Cancel' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Cancel' tag='BUTTON' type='button' class='btn Button mb-3 ml-0 ml-md-3 btn-secondary Button--Secondary' aaname='                  Cancel                 ' check:innerText='Cancel' /&gt;" Guid="5ff2bbac-198a-4790-b4f9-639d101efc0e" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="DEBUUUUUUUUG" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="486,188" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d420b60e-2cc9-4464-a673-37abee80bde5" Timeout="5" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3411685#8380762" CVScreenId="cff7ee3d-b8dc-4660-9075-c8344a7739b6" CvElementArea="1091, 325, 81, 37" CvTextArea="1121, 337, 21, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="1123, 335, 18, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                 Yes                 ' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                 Yes                 ' tag='SPAN' type='' class='' check:innerText='Yes' /&gt;" Guid="9316bfe2-9d26-4082-b340-9d12ee41b5b4" InformativeScreenshot="2be419d6086200487e9edea100ab8819.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="cff7ee3d-b8dc-4660-9075-c8344a7739b6" CvElementArea="1091, 325, 81, 37" CvTextArea="1121, 337, 21, 12" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="1092, 327, 80, 34" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Yes' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Yes' tag='BUTTON' type='button' class='btn Button Modal__YesButton btn-primary Button--Primary' aaname='                  Yes                 ' check:innerText='Yes' /&gt;" Guid="5d7b868c-3dd2-426c-8b87-b3e96803f5de" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Nota rellenada y guardada correctamente.&quot;]" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-8, -8, 1910, 911" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJxSURBVDhPY0AHZfsvyhTvP7ei7MgNXqgQw9SEqKap8TGRUC5+0LD/Kk/ZgbM3Svef9QDxO/38eIEGXJmWEmMLVkAMKNt/dkn5wQtrQOzpMVHRIAMaQkPZwJLEgIq9F9xKD17+1nTkou3MqOAz0+Iiu6BSRIL//xkLz97bXDR51sd+f48H8yL8ZaEyKOA/AwMjg1FY1lzj4Mw5phHZzkAxRogU0Bs1jYkhcUn/4zJzN0KFwOCAoYflLkO3ifuMPHdu03cxZDAOz3IDGxKW9dgoIveUcnSx5/rcDLMFkcGPy9LTn2cfvPS37OH7vEu6jsYHdF127jJw+7bD0GPHbkPPuI3WfvCYYpAJzZDWjcqfrOoc/N/H2vrXpIjgMwdbqmWL77xtTm6b/r9F0+b3fm2HYyf4NYyhWlDBiWhPvuXp8c1FPh7/tUzt/msHJh+zTawUvaxuV92vbvs/Ia/+X8mRq4fTXvzUhWqBgBlJkZbTkmJ6ZyXGPZyfGndvS2ZcjFVkgZNaZP5LZ4eA+3u07P6d07QrL7v2wqLk5PXt5QfOfyzdf25T+aGLESU7L3IzTImLXjo7KW7zrKTYhI60UH6ouQzBDsHxlmoG/0O1zHdAhcCg+MB509KD57vLD1/dVbzvkjEDrgRyXsd5YY2x0w/5oJQnerElilBhBABGdcP//0xQHirYbeJpuE/f5eMua38vzaics8ZhGVOhUsSBXYbuPduN3LeD2Hrh2RHGoWkPHEKzeMCShMBVbW22nYbuJ3cbeQSB+EDncxuGZl03Cs0CZy6CYIexu+ROfbc1+w0CBKBCDEbhGS1GEVkJUC4SYGAAAO3L8scX6PyuAAAAAElFTkSuQmCC" InformativeScreenshot="1e985144e98d2ca28303e04db0ab3f7e.jpg" Selector="&lt;html app='chrome.exe' url='*support.adamo.es*' /&gt;" Title="1193550793-71901897X - Managed OTRS" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="586,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Gestión de excepción de sistema" sap:VirtualizedContainerService.HintSize="450,317" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;SE: &quot;+exception.Message]" />
+              <Rethrow sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="586,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="ui:BusinessRuleException">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Gestión de excepción de negocio" sap:VirtualizedContainerService.HintSize="450,317" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;BE: &quot;+exception.Message]" />
+              <Rethrow sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Rethrow_2" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="620,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando secuencia 'RellenarNotaOTRS' -----&quot;]" />
+  </Sequence>
+</Activity>

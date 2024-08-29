@@ -1,0 +1,55 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|k2v6siYzT2ezu2JQUgUP2RcZPZFhKu6DcJLhmnMah8",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "CÓDIGO",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "DESCRIPCIÓN",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "SERVICIO AL QUE DEBE IR TICKET OTRS",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "ReadRangeConnections`1_1|DataTable|zxgKFVM4SZMsyj7CYVslkuow1HBXQrva2tI4U5z798",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 2,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|O8EJdaeUFv5fUN0dtR7WeU4x2DCmnFhxykCeutKPU",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "CÓDIGO",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable2",
+        "hash": "ReadRangeConnections`1_1|DataTable|571lDR8Vz0Y6inC0Whh05se7hAL10Z0oR0B2i2skz0",
+        "assemblyName": "Studio.Generated.TypedDataTable2"
+      }
+    }
+  ]
+}

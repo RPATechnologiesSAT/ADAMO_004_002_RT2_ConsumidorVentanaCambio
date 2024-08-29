@@ -1,0 +1,279 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="NavegarDetalleProceso_AñadirNota" this:NavegarDetalleProceso_AñadirNota.in_IDProceso="00837202408281501154" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_IDProceso" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1404,1109</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>NavegarDetalleProceso_AñadirNota_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="552,1044" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="490,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'NavegarDetalleProceso_AñadirNota' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1088,2801" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Dashboard - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,2551" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2334" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Navegando a ticket en OTRS...&quot;]" />
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="1bdcee5b-00ea-4fd6-99fe-54da348b92b9" CvElementArea="863, 145, 23, 23" CvType="Icon" DesignTimeRectangle="867, 147, 16, 21" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' idx='2' isleaf='1' parentid='App' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='CommonIcon CommonIcon__Bold CommonIcon__Bold--Normal CommonIcon__Bold--SearchAlternate' isleaf='1' parentid='App' tag='DIV' aaname='' /&gt;" Guid="14b93853-e39f-4bfe-9ded-df466c7cc44f" InformativeScreenshot="3f6bba7257dbfceb44f579f6ad8b3914.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="3" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Text="[in_IDProceso]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="df9c98e4-335d-4209-b0d4-e7a3963d5fce" CvTextArea="610, 217, 117, 15" CvTextArgument="Type here to search..." CvType="Text" DesignTimeRectangle="595, 199, 818, 51" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='autosuggest__input--open bv-no-focus-ring pl-3 pr-5 py-2 Search__Input' placeholder='Type here to search...' aaname='Type here to search...' /&gt;" Guid="83199985-e388-4bb6-9bfb-1f7b3426907e" InformativeScreenshot="3671d0028307101c3ea954aaf026d4a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NCheckState DisplayName="Check App State 'Note Article'" sap:VirtualizedContainerService.HintSize="954,672" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,455" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Ticket encontrado en OTRS.&quot;]" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Note Article'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="e6589ee0-519c-449d-aa65-b6610381eddb" CvElementArea="1348, 291, 49, 22" CvTextArea="610, 294, 781, 13" CvTextArgument="Note Article" CvType="Button" DesignTimeRectangle="596, 284, 816, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' type='' class='row py-1' aaname=' ' check:innerText='Note&amp;#xD;&amp;#xA;Article' /&gt;" Guid="a3455f52-a0c4-43e6-91e2-f3f7343378d1" InformativeScreenshot="82c8006be3759b4845afa6d4f0571d95.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Throw Exception="[new BusinessRuleException(&quot;No se han encontrado resultados en OTRS para el ID de Proceso: &quot;+in_IDProceso)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="8979ecc1-cabc-4d1f-8a64-ff9e8a27b1ce" CvElementArea="1336, 291, 50, 22" CvTextArea="605, 294, 774, 13" CvTextArgument="Note Article" CvType="Button" DesignTimeRectangle="591, 284, 809, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autosuggest__results-item--0' tag='DIV' type='' class='row py-1' aaname=' ' check:text='Note&amp;#xD;&amp;#xA;              &amp;#xD;&amp;#xA;        Article' /&gt;" Guid="47a9b720-9606-4708-90c4-b3b4c01e6f68" ImageBase64="" InformativeScreenshot="cf6b34805db48c6b1c2a271347493040.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Actions'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="7929ce43-ac8d-4ba1-88db-756a3e46d8de" CvTextArea="117, 233, 44, 12" CvTextArgument="Actions" CvType="Text" DesignTimeRectangle="119, 231, 41, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='HoverUnderline' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='HoverUnderline' tag='SPAN' type='' aaname='Actions' check:innerText='Actions' /&gt;" Guid="bcaa77c2-cb9d-4616-8b59-1cec9c8daf74" InformativeScreenshot="a0a6e3ca5cc2f7db8ab290187f1b571a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Note'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="b307aaa3-0e46-4437-bd30-167618387e9e" CvTextArea="156, 318, 66, 12" CvTextArgument="&gt; Add Note" CvType="Text" DesignTimeRectangle="157, 307, 167, 35" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                                 Add Note                              ' parentid='__bv_popover_6651__' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                 Add Note                              ' parentid='__bv_popover_6651__' tag='A' type='' class='d-block HoverUnderline' check:innerText='Add Note' /&gt;" Guid="37c9e3b9-9b1f-47ed-a33b-cd5e8d84e0c8" ImageBase64="" InformativeScreenshot="38e0fe703409eae56d6cf63e86f3d101.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="26ae6e50-0916-4333-871a-fb8f97b2895a" CvTextArea="156, 278, 97, 13" CvTextArgument="Communication" CvType="Text" DesignTimeRectangle="157, 277, 167, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='__bv_popover_6651__' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__bv_popover_6651__' tag='H2' type='' class='border-bottom d-block pb-1' aaname='Communication' check:innerText='Communication' /&gt;" Guid="7c507797-c451-4f08-8bb9-668bcbb9e95d" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NCheckState DisplayName="Check App State 'Add Note'" sap:VirtualizedContainerService.HintSize="954,475" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Sección Nueva Nota abierta.&quot;]" />
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Throw Exception="[new Exception(&quot;No se ha navegado correctamente a la sección de nueva nota en OTRS.&quot;)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="3901d543-3605-4f06-beda-bb474de7d66e" CvTextArea="1055, 195, 64, 14" CvTextArgument="Add Note" CvType="Text" DesignTimeRectangle="1056, 182, 531, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='Layout__Content__Main' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='Layout__Content__Main' tag='H2' type='' class='text-truncate' aaname='                                     Add Note                                 ' check:innerText='Add Note' /&gt;" Guid="5d338854-4281-4d44-b474-8b913d279b77" InformativeScreenshot="44bdeb112f14870dba4015cb27987ca1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-8, -8, 1910, 911" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJxSURBVDhPY0AHZfsvyhTvP7ei7MgNXqgQw9SEqKap8TGRUC5+0LD/Kk/ZgbM3Svef9QDxO/38eIEGXJmWEmMLVkAMKNt/dkn5wQtrQOzpMVHRIAMaQkPZwJLEgIq9F9xKD17+1nTkou3MqOAz0+Iiu6BSRIL//xkLz97bXDR51sd+f48H8yL8ZaEyKOA/AwMjg1FY1lzj4Mw5phHZzkAxRogU0Bs1jYkhcUn/4zJzN0KFwOCAoYflLkO3ifuMPHdu03cxZDAOz3IDGxKW9dgoIveUcnSx5/rcDLMFkcGPy9LTn2cfvPS37OH7vEu6jsYHdF127jJw+7bD0GPHbkPPuI3WfvCYYpAJzZDWjcqfrOoc/N/H2vrXpIjgMwdbqmWL77xtTm6b/r9F0+b3fm2HYyf4NYyhWlDBiWhPvuXp8c1FPh7/tUzt/msHJh+zTawUvaxuV92vbvs/Ia/+X8mRq4fTXvzUhWqBgBlJkZbTkmJ6ZyXGPZyfGndvS2ZcjFVkgZNaZP5LZ4eA+3u07P6d07QrL7v2wqLk5PXt5QfOfyzdf25T+aGLESU7L3IzTImLXjo7KW7zrKTYhI60UH6ouQzBDsHxlmoG/0O1zHdAhcCg+MB509KD57vLD1/dVbzvkjEDrgRyXsd5YY2x0w/5oJQnerElilBhBABGdcP//0xQHirYbeJpuE/f5eMua38vzaics8ZhGVOhUsSBXYbuPduN3LeD2Hrh2RHGoWkPHEKzeMCShMBVbW22nYbuJ3cbeQSB+EDncxuGZl03Cs0CZy6CYIexu+ROfbc1+w0CBKBCDEbhGS1GEVkJUC4SYGAAAO3L8scX6PyuAAAAAElFTkSuQmCC" InformativeScreenshot="ca0651be63b736c3324240bb8c5fe54d.jpg" Selector="&lt;html app='chrome.exe' url='*support.adamo.es*' /&gt;" Title="Dashboard - Managed OTRS" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1054,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Gestión de excepción de sistema" sap:VirtualizedContainerService.HintSize="450,317" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;SE: &quot;+exception.Message]" />
+              <Rethrow sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Rethrow_2" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1054,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="ui:BusinessRuleException">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Gestión de excepción de negocio" sap:VirtualizedContainerService.HintSize="450,317" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;BE: &quot;+exception.Message]" />
+              <Rethrow sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="490,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando secuencia 'NavegarDetalleProceso_AñadirNota' -----&quot;]" />
+  </Sequence>
+</Activity>

@@ -1,0 +1,93 @@
+{
+  "name": "ADAMO_004_002_RT2_ConsumidorVentanaCambio",
+  "projectId": "e0398765-2793-4ac2-9228-15a99ae92054",
+  "description": "Performer - Template Framework prepared to consume transaction items from Orquestrator queues.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.23.5]",
+    "UiPath.GSuite.Activities": "[2.6.24]",
+    "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.System.Activities": "[24.10.4]",
+    "UiPath.Testing.Activities": "[24.10.1]",
+    "UiPath.UIAutomation.Activities": "[24.10.3]",
+    "UiPath.WebAPI.Activities": "[1.21.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.10.5.0",
+  "projectVersion": "1.0.1",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "Librerias/LibreriaSAP/SapChooseLayout.xaml",
+        "Librerias/LibreriaSAP/SapChooseVariant.xaml",
+        "Librerias/LibreriaSAP/SapDownloadExcel.xaml",
+        "Librerias/LibreriaSAP/SapLogin.xaml",
+        "Librerias/LibreriaMethodsGenerals/AddRowDataTable.xaml",
+        "Librerias/LibreriaMethodsGenerals/CheckEnvironment.xaml",
+        "Librerias/LibreriaMethodsGenerals/CheckFiles.xaml",
+        "Librerias/LibreriaMethodsGenerals/CleaningDesktop.xaml",
+        "Librerias/LibreriaMethodsGenerals/CreateFolderOrFile.xaml",
+        "Librerias/LibreriaMethodsGenerals/CreateListPathScreenshots.xaml",
+        "Librerias/LibreriaMethodsGenerals/CreateReport.xaml",
+        "Librerias/LibreriaMethodsGenerals/CreateTemplateRowsTableBodyEmail.xaml",
+        "Librerias/LibreriaMethodsGenerals/CreateTemplateTableBodyEmail.xaml",
+        "Librerias/LibreriaMethodsGenerals/CreateTextScript.xaml",
+        "Librerias/LibreriaMethodsGenerals/GetDatatable.xaml",
+        "Librerias/LibreriaMethodsGenerals/ModificateDataTableColumns.xaml",
+        "Librerias/LibreriaMethodsGenerals/MoveFile.xaml",
+        "Librerias/LibreriaMethodsGenerals/OpenFolderOrFile.xaml",
+        "Librerias/LibreriaMethodsGenerals/SearchErrorUipath.xaml",
+        "Librerias/LibreriaMethodsGenerals/ShareFolder.xaml",
+        "Librerias/LibreriaMethodsGenerals/TakeScreenshot.xaml",
+        "Librerias/LibreriaSAP/SapAddMultipleOptions.xaml",
+        "Librerias/LibreriaSAP/SapClose.xaml",
+        "Librerias/LibreriaSAP/SapNavigateToTransaction.xaml",
+        "Librerias/LibreriaSAP/SapReturnStep.xaml",
+        "Librerias/LibreriaSAP/SapSearchItem.xaml",
+        "Librerias/LibreriaMethodsGenerals/SendEmail.xaml"
+      ]
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "aaff3d5a-7d04-464d-84fa-a6d296e038dc",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

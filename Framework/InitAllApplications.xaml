@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>440,783</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1768,995</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -80,7 +80,7 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize applications" sap:VirtualizedContainerService.HintSize="450,718" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize applications" sap:VirtualizedContainerService.HintSize="450,930" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -95,11 +95,14 @@
         <InArgument x:TypeArguments="x:String" x:Key="in_URL">[in_Config("URL_Portanet").ToString]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login_OTRS - Invoke Workflow File (OTRS\Login_OTRS.xaml)" sap:VirtualizedContainerService.HintSize="388,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="OTRS\Login_OTRS.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login_OTRS - Invoke Workflow File (OTRS\Login_OTRS.xaml)" sap:VirtualizedContainerService.HintSize="388,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="OTRS\Login_OTRS.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_URL">[in_Config("URL_OTRS").ToString]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_OrchestratorFolderName">[in_Config("OrchestratorFolderName").ToString]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_CredentialAssetName">[in_Config("OTRSCredentialsAssetName").ToString]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login_InfoNova - Invoke Workflow File (Infonova\Login_InfoNova.xaml)" sap:VirtualizedContainerService.HintSize="388,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Infonova\Login_InfoNova.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_URL">[in_Config("URL_InfoNova").ToString]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>

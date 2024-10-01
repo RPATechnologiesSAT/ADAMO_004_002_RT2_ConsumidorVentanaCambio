@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1768,3756</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1794,3492</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DetalleItem_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,14 +118,14 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DetalleItem" sap:VirtualizedContainerService.HintSize="702,3691" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DetalleItem" sap:VirtualizedContainerService.HintSize="1034,3427" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="640,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'DetalleItem_Portanet' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="640,3218" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'DetalleItem_Portanet' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="972,2954" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -133,25 +133,25 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard CloseMode="Never" DisplayName="Use Browser Chrome: Visualización y Generación de Mensajes" sap:VirtualizedContainerService.HintSize="602,2968" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c1ba5612-1843-4a05-a4d5-5099c4d3df39">
+        <uix:NApplicationCard CloseMode="Never" DisplayName="Use Browser Chrome: Visualización y Generación de Mensajes" sap:VirtualizedContainerService.HintSize="934,2704" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c1ba5612-1843-4a05-a4d5-5099c4d3df39">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,2711" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="900,2447" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="506,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Recogiendo información adicional en Portanet...&quot;]" />
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG Image4'" sap:VirtualizedContainerService.HintSize="506,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Version="V3">
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="838,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Recogiendo información adicional en Portanet...&quot;]" />
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG Image4'" sap:VirtualizedContainerService.HintSize="838,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" DesignTimeRectangle="1063, 223, 109, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl id='Image4' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='Image4' type='' tag='IMG' class='' aaname='ir a rol receptor' /&gt;" Guid="01fb0eb7-57aa-409b-8fd7-94d9ec386fa7" InformativeScreenshot="bc4b9cd78dbe021760b83c77ac99d825.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Visualización y Generación de Mensajes' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ID proceso'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="506,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Text="[in_IDProceso]" Version="V3">
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ID proceso'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="838,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Text="[in_IDProceso]" Version="V3">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" DesignTimeRectangle="900, 327, 130, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tableCol='33' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="50eed5b9-d26e-4a2c-83bd-898efd68135c" ImageBase64="" InformativeScreenshot="2ce640c61e792056cd1414fec3ffb9de.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Visualización y Generación de Mensajes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -162,7 +162,7 @@
                     </uix:TargetAnchorable>
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="506,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Version="V3">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="838,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" DesignTimeRectangle="1154, 327, 50, 18" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tableCol='33' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='' aaname='Búsqueda Mensajería IdProceso' /&gt;" Guid="d02b40b8-3d37-4806-97f7-e0041c62e04d" InformativeScreenshot="f2a225bf425a100f34093b4d4f24730b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Visualización y Generación de Mensajes' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -179,18 +179,36 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Detalle DSP'" sap:VirtualizedContainerService.HintSize="506,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Version="V3">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" CVScreenId="8c353e4d-5432-4223-b7c7-6231adcb0558" CvElementArea="1489, 420, 44, 18" CvTextArea="1493, 423, 34, 11" CvTextArgument="Detalle" CvType="Button" DesignTimeRectangle="1488, 401, 43, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TABLE' visibleinnertext='Crear Nuevo Mensaje*' css-selector='body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' /&gt;&lt;webctrl tag='TR' visibleinnertext='*DSP*' /&gt;&lt;webctrl aaname='mostrar detalle' tag='IMG' colName='NB' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' visibleinnertext='Crear Nuevo Mensaje*' /&gt;&lt;webctrl tag='TR' visibleinnertext='*ASP*' /&gt;&lt;webctrl aaname='mostrar detalle' tag='IMG' colName='NB' type='' class='' /&gt;" Guid="e0ff5950-c933-485d-886a-ca365a6ee3ba" ImageBase64="" InformativeScreenshot="d87f485d722ea3047ffdd7bb604967a0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Visualización y Generación de Mensajes' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                </uix:NClick>
-                <uix:NApplicationCard CloseMode="Always" DisplayName="Use Browser Chrome: Portanet" sap:VirtualizedContainerService.HintSize="506,1564" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="5529a6fa-b6de-4406-94c7-fe534ccf1694" WindowResize="Maximize">
+                <uix:NCheckState DisplayName="Check App State" sap:VirtualizedContainerService.HintSize="838,605" sap2010:WorkflowViewState.IdRef="NCheckState_1">
+                  <uix:NCheckState.IfExists>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Detalle CP'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c1ba5612-1843-4a05-a4d5-5099c4d3df39" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" CVScreenId="8c353e4d-5432-4223-b7c7-6231adcb0558" CvElementArea="1489, 420, 44, 18" CvTextArea="1493, 423, 34, 11" CvTextArgument="Detalle" CvType="Button" DesignTimeRectangle="1509, 421, 43, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='TABLE' visibleinnertext='Crear Nuevo Mensaje*' css-selector='body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' /&gt;&lt;webctrl tag='TR' visibleinnertext='*CP*' /&gt;&lt;webctrl aaname='mostrar detalle' tag='IMG' colName='NB' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' visibleinnertext='Crear Nuevo Mensaje*' /&gt;&lt;webctrl tag='TR' visibleinnertext='*ASP*' /&gt;&lt;webctrl aaname='mostrar detalle' tag='IMG' colName='NB' type='' class='' /&gt;" Guid="e0ff5950-c933-485d-886a-ca365a6ee3ba" ImageBase64="" InformativeScreenshot="eef65dbe415ae65972827e62bc630f95.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Visualización y Generación de Mensajes' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence sap:VirtualizedContainerService.HintSize="450,388" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Error" Message="[&quot;No se encontrarón datos en detalle del item: &quot; + in_IDProceso]" />
+                      <Throw Exception="[new BusinessRuleException(&quot;No se encontrarón datos en detalle del item: &quot; + in_IDProceso)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;html app='chrome.exe' title='Visualización y Generación de Mensajes' /&gt;&lt;webctrl tag='TABLE' visibleinnertext='Crear Nuevo Mensaje*' css-selector='body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' /&gt;&lt;webctrl tag='TR' visibleinnertext='*CP*' /&gt;&lt;webctrl aaname='mostrar detalle' tag='IMG' colName='NB' /&gt;" Guid="4cae89f6-b3b6-4bd9-a1a3-398eb08fdf3e" SearchSteps="Selector" />
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NApplicationCard CloseMode="Always" DisplayName="Use Browser Chrome: Portanet" sap:VirtualizedContainerService.HintSize="838,852" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="5529a6fa-b6de-4406-94c7-fe534ccf1694" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,1347" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,635" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="text" />
                         </Sequence.Variables>
@@ -199,51 +217,9 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,143" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Detalle proceso encontrado. Copiando datos al portapapeles...&quot;]" />
-                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="410,154" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V3" />
-                        <If Condition="[in_TipoProceso = &quot;DSP1&quot;]" DisplayName="Tipo Proceso?" sap:VirtualizedContainerService.HintSize="410,672" sap2010:WorkflowViewState.IdRef="If_1">
-                          <If.Then>
-                            <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <uix:NGetText DisplayName="Get Text 'Nº Ident.Proceso'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="5529a6fa-b6de-4406-94c7-fe534ccf1694" TextString="[out_causaRechazo]" Version="V3">
-                                <uix:NGetText.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.portanet.net/MuestraFormularioDetalle" DesignTimeRectangle="641, 320, 284, 12" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tableRow='16' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='FONT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='inputn' /&gt;" Guid="b8e6c7dc-40bc-4d87-af94-3732cfde22de" InformativeScreenshot="c52fc2434ebe5c44314dc96b9d5c61cc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='Mostrar' title='Portanet' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                                    <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                        <uix:Target DesignTimeRectangle="236, 320, 86, 12" FullSelectorArgument="&lt;webctrl tableRow='16' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Causa rechazo:' check:innerText='Causa rechazo:' /&gt;" Guid="d9c3d6d0-c5f2-4745-92f3-b4e8ff9ab023" SearchSteps="FuzzySelector" />
-                                      </scg:List>
-                                    </uix:TargetAnchorable.Anchors>
-                                  </uix:TargetAnchorable>
-                                </uix:NGetText.Target>
-                              </uix:NGetText>
-                            </Sequence>
-                          </If.Then>
-                          <If.Else>
-                            <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <uix:NGetText DisplayName="Get Text 'Causa Denegación'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="5529a6fa-b6de-4406-94c7-fe534ccf1694" TextString="[out_causaRechazo]" Version="V3">
-                                <uix:NGetText.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.portanet.net/MuestraFormularioDetalle" DesignTimeRectangle="390, 320, 130, 12" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='15' tag='FONT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='FONT' class='inputn' /&gt;" Guid="53a0e620-d43a-4e84-84dc-12fde6713fe1" InformativeScreenshot="df59dbbd76115199dc1216dcc06f7f3b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='Mostrar' title='Portanet' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                                    <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                        <uix:Target DesignTimeRectangle="236, 320, 106, 12" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='15' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname='Causa denegación:' check:innerText='Causa denegación:' /&gt;" Guid="64d47ca7-613e-4007-a650-9b6f4d1ee61c" SearchSteps="FuzzySelector" />
-                                      </scg:List>
-                                    </uix:TargetAnchorable.Anchors>
-                                  </uix:TargetAnchorable>
-                                </uix:NGetText.Target>
-                              </uix:NGetText>
-                            </Sequence>
-                          </If.Else>
-                        </If>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,143" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Datos copiados y causa rechazo recogida: &quot;+out_causaRechazo]" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Detalle proceso encontrado. Copiando datos al portapapeles...&quot;]" />
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,154" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V3" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Datos copiados&quot;]" />
                       </Sequence>
                     </ActivityAction>
                   </uix:NApplicationCard.Body>
@@ -266,7 +242,7 @@
         </uix:NApplicationCard>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="606,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="938,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -289,7 +265,7 @@
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="606,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="938,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -313,6 +289,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="640,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;----- Finalizando secuencia 'DetalleItem_Portanet' -----&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;----- Finalizando secuencia 'DetalleItem_Portanet' -----&quot;]" />
   </Sequence>
 </Activity>

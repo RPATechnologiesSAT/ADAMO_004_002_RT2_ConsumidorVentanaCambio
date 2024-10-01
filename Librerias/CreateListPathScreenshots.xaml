@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>758,3209</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1447,3209</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CreateListPathScreenshots_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -157,7 +157,7 @@
                             <InArgument x:TypeArguments="x:String">[Path.Combine(in_PathEvidences+"\Historico",CurrentFile.Name.ToString)]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ModulosPrivados\CreateFolderOrFile.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Librerias\CreateFolderOrFile.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateFolderOrFile - Invoke Workflow File (Librerias\CreateFolderOrFile.xaml)" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Librerias\CreateFolderOrFile.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <InArgument x:TypeArguments="x:String" x:Key="in_Path">[Path.GetDirectoryName(str_RutaFinal)]</InArgument>
                             <InArgument x:TypeArguments="x:Boolean" x:Key="in_BooCreateFolder">True</InArgument>

@@ -1,4 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TEST" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,590" sap2010:WorkflowViewState.IdRef="TEST_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TEST" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
+    <x:Property Name="in_Telefono" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>440,168</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>TEST_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -42,6 +51,20 @@
       <x:String>UiPath.Mail.Activities</x:String>
       <x:String>UiPath.Mail.Activities.Utils</x:String>
       <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -102,9 +125,18 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TEST" sap:VirtualizedContainerService.HintSize="546,525" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TEST" sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="text" />
     </Sequence.Variables>
@@ -113,25 +145,5 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard CloseMode="Never" DisplayName="Use Browser Chrome: IU Infonova - Resumen del cliente" sap:VirtualizedContainerService.HintSize="484,414" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="2707e38e-9488-4667-be98-1a612f90705d">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="Sequence_3">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/find" />
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASYSURBVFhHxde/q9ZVHAdwTYSLii3XErUQHLSLUouL2aAYCAUONrQkcRe9EI0ud3I0EFToxyK0BA0holKhBC6CUUTS5iL0B9QWNMTt/Tp8Tj3f+/y4T0t+4M33/Pic87zP59c5z6a1tbVniomD/yf+bcwpf765uBSsVlf/arBcXf2VYKG6M2VuAtnweLC72ruCX9tEJG0EzlZ7n7lgc/W3+k6T/0LgcnC1uvqPg0PVvhWcq7bTX9Emad8MzlR3TGYSyML9wbZq7wyeBkeq/yC4VO2HwflqPwkuVPtE8HMw1QobEWDa28GW6l8PHlX7YnCr2si8E+wO/gr2BHuDP4LTpbMlsN9+/S4bEbDoi+BuwAIvBL8HTnY4eFp6CLwRvBvcr7EbwXfB5mB7YB+HaRbtMpFAlM4EzWz5WvxL8E2AEB/fqzkuQQzBV4LPgveDI8FvwcuBgLWeTrPkqIwRiNLWQODw3enACWzyU/Bx8FzwY3A0+DRwckFI54cAIWTfC54PrPs22Fn7mxfQx/XHCHSJAjPzITM6ic2+Dz4M/PhXwdvBBwHCLwZfBqcCczsC+kizHPeJIVYTCy2lBwQyuBC0/CVpCyS+ZE4nsun94K3gk+BgcDJ4LTgQHAu+Dl4K6CHLYtwmdh4FLYu6rCdAURG5ElwI9lDKl0+Z1cls/nmwve2wTjK+WPNIshR33QtOlEqT9LlsaUCgJlQyROSzlHISgcV3zOuEi015imRe4LIQwkdrTNZIXRmjiDno6hiBUYmCvJZaoluA8fGxmp4p0eMeMSJQ+R0E66WgVVAyIJCJ5eBscC44HyguolyKCSKBdqDWzpToiQ0Ban3LgEmynoDoBEyVV+aCOzUm2l+ttTOFXulbpwb0vexrrP3WgMA0iSL/O4kTnazhmRI9WcFigo0FrWdRwc3CLL08kUAmDgV8hWn3H1/y6cFSmynRez0QM2JHDImllvujMiAQhdVAdIpS5hK1hynm24uP6J6Ygl0yLxVli6xhPVkkm2SV7JJl++iuJ+Cls6vtUpK+iiiPe/mV3/J8YipmXAqaVy8QVj/6Fe6W5AJ1xkFXBgRGJZOKj8qlgmGsoqlsTmJzJ1T5+FrAiXqpx0JI0lM5VVCVVEXdW9vb3x2zMEYgg3JfhPK72i391HI1XW23qZMxLx8LNNEuQMVIKz4BsvTdIe4Sd4q7ZVARJxHw9vsoaLnrG7jN3Go2cyJmNS7ARLlgFeUCtZdfFkPaOjpO7HZ1yyLcrvsxAqMSJSeXw+5zmzgJc3KPwBLdUqw/WPoDhfm5zXrkrd9Rc677f96IUwlEaVvgBeMlI7CcgBlv1LwfkVpO/qDGuE3NF7hih/sQQ9A+Gz9IukTZg/RaX5Qv8/GhK1o0Synxorh0AlxxsdoC+Hq1WcJhrumPylQCo5KFzMZ3LYDylUpPqu3OeFhtxauT4SYW6bHEooMHKZmXgDfizerqy+OVaiur/XWsgj7WJmnLpsvVnShzESDZqD9SxYIi0ipZvmr66B8Wc62Y5ctF7e03TeYm0CUbera105O0XeGjBJTzpepuKAMCzwZrm/4GDmiQnk4g7JMAAAAASUVORK5CYII=" InformativeScreenshot="42cd2d618b684e62a30aa8dea6688e91.jpg" Selector="&lt;html app='chrome.exe' title='IU Infonova - Resumen del cliente' /&gt;" Title="IU Infonova - Buscar cliente" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
   </Sequence>
 </Activity>

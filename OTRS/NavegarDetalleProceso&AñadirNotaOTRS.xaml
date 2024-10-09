@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1794,3576</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1498,4049</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>NavegarDetalleProceso_AñadirNota_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -110,14 +110,14 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="1150,3471" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="1150,3904" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1088,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'NavegarDetalleProceso_AñadirNota' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1088,2998" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1088,3431" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -125,20 +125,32 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Dashboard - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,2748" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Dashboard - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,3181" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2531" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2964" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Navegando a ticket en OTRS...&quot;]" />
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'DIV'" sap:VirtualizedContainerService.HintSize="954,107" sap2010:WorkflowViewState.IdRef="SetFocus_1">
+                  <ui:SetFocus.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6edf3a71-7194-4ea3-b972-ed9f697703cd" InformativeScreenshot="d440619b0abbe9cc22a55dee3043fb3f" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' idx='2' isleaf='1' parentid='App' tag='DIV' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SetFocus.Target>
+                </ui:SetFocus>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="1bdcee5b-00ea-4fd6-99fe-54da348b92b9" CvElementArea="863, 145, 23, 23" CvType="Icon" DesignTimeRectangle="867, 147, 16, 21" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' idx='2' isleaf='1' parentid='App' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='CommonIcon CommonIcon__Bold CommonIcon__Bold--Normal CommonIcon__Bold--SearchAlternate' isleaf='1' parentid='App' tag='DIV' aaname='' /&gt;" Guid="14b93853-e39f-4bfe-9ded-df466c7cc44f" InformativeScreenshot="3f6bba7257dbfceb44f579f6ad8b3914.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                   </uix:NClick.Target>
@@ -183,22 +195,38 @@
                     <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3413667#8375792" CVScreenId="1f43f3ec-86ea-48d2-989d-8dce750630d1" CvElementArea="136, 193, 16, 21" CvTextArea="154, 195, 157, 14" CvTextArgument="1193610324-12691068J" CvType="ArrowButton" DesignTimeRectangle="139, 190, 172, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ml-1 d-inline-block text-truncate Breadcrumb__LastCrumb' /&gt;" Guid="7474de24-7793-4145-9ad0-587bb93cd33b" ImageBase64="" InformativeScreenshot="717f3bb98846c622d9bfa616ef478995.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193610324-12691068J - Managed OTRS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                   </uix:NGetText.Target>
                 </uix:NGetText>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Actions'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="7929ce43-ac8d-4ba1-88db-756a3e46d8de" CvTextArea="117, 233, 44, 12" CvTextArgument="Actions" CvType="Text" DesignTimeRectangle="119, 231, 41, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='HoverUnderline' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='HoverUnderline' tag='SPAN' type='' aaname='Actions' check:innerText='Actions' /&gt;" Guid="bcaa77c2-cb9d-4616-8b59-1cec9c8daf74" InformativeScreenshot="a0a6e3ca5cc2f7db8ab290187f1b571a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                  </uix:NClick.Target>
-                </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Note'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="b307aaa3-0e46-4437-bd30-167618387e9e" CvTextArea="156, 318, 66, 12" CvTextArgument="&gt; Add Note" CvType="Text" DesignTimeRectangle="157, 307, 167, 35" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                                 Add Note                              ' parentid='__bv_popover_6651__' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                 Add Note                              ' parentid='__bv_popover_6651__' tag='A' type='' class='d-block HoverUnderline' check:innerText='Add Note' /&gt;" Guid="37c9e3b9-9b1f-47ed-a33b-cd5e8d84e0c8" ImageBase64="" InformativeScreenshot="38e0fe703409eae56d6cf63e86f3d101.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                          <uix:Target CVScreenId="26ae6e50-0916-4333-871a-fb8f97b2895a" CvTextArea="156, 278, 97, 13" CvTextArgument="Communication" CvType="Text" DesignTimeRectangle="157, 277, 167, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='__bv_popover_6651__' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__bv_popover_6651__' tag='H2' type='' class='border-bottom d-block pb-1' aaname='Communication' check:innerText='Communication' /&gt;" Guid="7c507797-c451-4f08-8bb9-668bcbb9e95d" SearchSteps="FuzzySelector" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:NClick.Target>
-                </uix:NClick>
+                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="954,640" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,465" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Actions'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="7929ce43-ac8d-4ba1-88db-756a3e46d8de" CvTextArea="117, 233, 44, 12" CvTextArgument="Actions" CvType="Text" DesignTimeRectangle="119, 231, 41, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='HoverUnderline' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='HoverUnderline' tag='SPAN' type='' aaname='Actions' check:innerText='Actions' /&gt;" Guid="bcaa77c2-cb9d-4616-8b59-1cec9c8daf74" InformativeScreenshot="a0a6e3ca5cc2f7db8ab290187f1b571a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Note'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="b307aaa3-0e46-4437-bd30-167618387e9e" CvTextArea="156, 318, 66, 12" CvTextArgument="&gt; Add Note" CvType="Text" DesignTimeRectangle="157, 307, 167, 35" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                                 Add Note                              ' parentid='__bv_popover_6651__' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                 Add Note                              ' parentid='__bv_popover_6651__' tag='A' type='' class='d-block HoverUnderline' check:innerText='Add Note' /&gt;" Guid="37c9e3b9-9b1f-47ed-a33b-cd5e8d84e0c8" ImageBase64="" InformativeScreenshot="38e0fe703409eae56d6cf63e86f3d101.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="26ae6e50-0916-4333-871a-fb8f97b2895a" CvTextArea="156, 278, 97, 13" CvTextArgument="Communication" CvType="Text" DesignTimeRectangle="157, 277, 167, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='__bv_popover_6651__' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__bv_popover_6651__' tag='H2' type='' class='border-bottom d-block pb-1' aaname='Communication' check:innerText='Communication' /&gt;" Guid="7c507797-c451-4f08-8bb9-668bcbb9e95d" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                </ui:RetryScope>
                 <uix:NCheckState DisplayName="Check App State 'Add Note'" sap:VirtualizedContainerService.HintSize="954,475" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_6">

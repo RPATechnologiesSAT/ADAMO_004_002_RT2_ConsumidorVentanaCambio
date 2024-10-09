@@ -51,6 +51,8 @@
             "Value": "Credentials_OTRS",
             "Description": "Nombre Asset Credenciales web OTRS" 
         }
+		
+		
     ],
 
     "Assets": [
@@ -65,6 +67,14 @@
 		{
 			"Name":"URL_InfoNova",
 			"Description":"URL de acceso a la web de Infonova"
+		},
+		{
+            "Name": "API_MessageMedia_EndPoint",
+            "Description": "Config para enviar mensaje via API de message media."
+        },
+		{
+			"Name":"DestinatariosRevisionDSPs",
+			"Description":"Lista de correos para proceso de Ventana Cambio"
 		}
     ]
 }

@@ -1161,9 +1161,9 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="Final State" sap:VirtualizedContainerService.HintSize="647,3426" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
+            <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="Final State" sap:VirtualizedContainerService.HintSize="647,3616" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
               <State.Entry>
-                <Sequence DisplayName="Final State" sap:VirtualizedContainerService.HintSize="601,3281" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                <Sequence DisplayName="Final State" sap:VirtualizedContainerService.HintSize="601,3471" sap2010:WorkflowViewState.IdRef="Sequence_76">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1348,12 +1348,23 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <ui:IfElseIf DisplayName="Throw Exception - Set Job as Failed" sap:VirtualizedContainerService.HintSize="539,790" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                  <ui:IfElseIf DisplayName="Throw Exception - Set Job as Failed" sap:VirtualizedContainerService.HintSize="539,980" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
                     <ui:IfElseIf.ConditionBlocks>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                         <ui:IfElseIfBlock BlockType="If" Condition="[Cint(Config(&quot;ResultStatus&quot;).ToString) = -1]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_10">
                           <ui:IfElseIfBlock.Then>
-                            <Throw DisplayName="Throw SE" Exception="[New exception(Config(&quot;ResultMessage&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_7" />
+                            <ui:CommentOut sap:VirtualizedContainerService.HintSize="486,280" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_108">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Throw DisplayName="Throw SE" Exception="[New exception(Config(&quot;ResultMessage&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_7" />
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                            </ui:CommentOut>
                           </ui:IfElseIfBlock.Then>
                         </ui:IfElseIfBlock>
                         <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Cint(Config(&quot;ResultStatus&quot;).ToString) = -2]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_11">

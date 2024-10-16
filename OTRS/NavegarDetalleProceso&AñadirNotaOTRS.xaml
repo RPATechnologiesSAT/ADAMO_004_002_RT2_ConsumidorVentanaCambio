@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1498,4049</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1472,3969</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>NavegarDetalleProceso_AñadirNota_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -152,7 +152,7 @@
                 </ui:SetFocus>
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
                   <uix:NClick.Target>
-                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="1bdcee5b-00ea-4fd6-99fe-54da348b92b9" CvElementArea="863, 145, 23, 23" CvType="Icon" DesignTimeRectangle="867, 147, 16, 21" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' idx='2' isleaf='1' parentid='App' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='CommonIcon CommonIcon__Bold CommonIcon__Bold--Normal CommonIcon__Bold--SearchAlternate' isleaf='1' parentid='App' tag='DIV' aaname='' /&gt;" Guid="14b93853-e39f-4bfe-9ded-df466c7cc44f" InformativeScreenshot="3f6bba7257dbfceb44f579f6ad8b3914.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                    <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/" CVScreenId="1bdcee5b-00ea-4fd6-99fe-54da348b92b9" CvElementArea="863, 145, 23, 23" CvType="Icon" DesignTimeRectangle="859, 149, 18, 22" DesignTimeScaleFactor="1.100000023841858" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div' idx='2' isleaf='1' parentid='App' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='CommonIcon CommonIcon__Bold CommonIcon__Bold--Normal CommonIcon__Bold--SearchAlternate' isleaf='1' parentid='App' tag='DIV' aaname='' /&gt;" Guid="14b93853-e39f-4bfe-9ded-df466c7cc44f" InformativeScreenshot="c611de9cbb40377f0a0bda50fdf4821c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard - Managed OTRS' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
                 <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="3" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Text="[in_IDProceso]" Version="V3">

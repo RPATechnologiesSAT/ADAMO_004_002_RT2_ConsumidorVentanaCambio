@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1472,3969</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1140,4169</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>NavegarDetalleProceso_AñadirNota_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -110,14 +110,14 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="1150,3904" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NavegarDetalleProceso_AñadirNota" sap:VirtualizedContainerService.HintSize="1150,4064" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1088,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'NavegarDetalleProceso_AñadirNota' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1088,3431" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1088,3591" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -125,13 +125,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Dashboard - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,3181" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Dashboard - Managed OTRS" sap:VirtualizedContainerService.HintSize="1050,3341" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2964" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,3084" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -195,7 +195,7 @@
                     <uix:TargetAnchorable BrowserURL="https://support.adamo.es/agent/ticket/3413667#8375792" CVScreenId="1f43f3ec-86ea-48d2-989d-8dce750630d1" CvElementArea="136, 193, 16, 21" CvTextArea="154, 195, 157, 14" CvTextArgument="1193610324-12691068J" CvType="ArrowButton" DesignTimeRectangle="139, 190, 172, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ml-1 d-inline-block text-truncate Breadcrumb__LastCrumb' /&gt;" Guid="7474de24-7793-4145-9ad0-587bb93cd33b" ImageBase64="" InformativeScreenshot="717f3bb98846c622d9bfa616ef478995.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193610324-12691068J - Managed OTRS' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                   </uix:NGetText.Target>
                 </uix:NGetText>
-                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="954,640" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="954,720" sap2010:WorkflowViewState.IdRef="RetryScope_2">
                   <ui:RetryScope.ActivityBody>
                     <ActivityAction>
                       <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,465" sap2010:WorkflowViewState.IdRef="Sequence_10">
@@ -226,8 +226,14 @@
                   <ui:RetryScope.Condition>
                     <ActivityFunc x:TypeArguments="x:Boolean" />
                   </ui:RetryScope.Condition>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </ui:RetryScope>
-                <uix:NCheckState DisplayName="Check App State 'Add Note'" sap:VirtualizedContainerService.HintSize="954,475" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
+                <uix:NCheckState DisplayName="Check App State 'Add Note'" sap:VirtualizedContainerService.HintSize="954,515" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="3c265eeb-48df-40bb-bf31-a2f01cad0e9a" Version="V3">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
@@ -251,6 +257,12 @@
                   <uix:NCheckState.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="3901d543-3605-4f06-beda-bb474de7d66e" CvTextArea="1055, 195, 64, 14" CvTextArgument="Add Note" CvType="Text" DesignTimeRectangle="1056, 182, 531, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='Layout__Content__Main' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='Layout__Content__Main' tag='H2' type='' class='text-truncate' aaname='                                     Add Note                                 ' check:innerText='Add Note' /&gt;" Guid="5d338854-4281-4d44-b474-8b913d279b77" InformativeScreenshot="44bdeb112f14870dba4015cb27987ca1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='1193550793-71901897X - Managed OTRS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                   </uix:NCheckState.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
               </Sequence>
             </ActivityAction>

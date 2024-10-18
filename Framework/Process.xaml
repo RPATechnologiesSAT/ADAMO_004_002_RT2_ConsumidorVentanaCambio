@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1498,2090</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>638,2170</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Proceso_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,7 +118,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="572,1985" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="648,1985" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CausaRechazo" />
     </Sequence.Variables>
@@ -127,7 +127,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Process" sap:VirtualizedContainerService.HintSize="510,1874" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Process" sap:VirtualizedContainerService.HintSize="586,1874" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -135,7 +135,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="472,1624" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="548,1624" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Centralita" />
             <Variable x:TypeArguments="x:String" Name="Titulo" />
@@ -146,7 +146,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DetalleItemPortanet - Invoke Workflow File (Portanet\DetalleItemPortanet.xaml)" sap:VirtualizedContainerService.HintSize="410,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Portanet\DetalleItemPortanet.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DetalleItemPortanet - Invoke Workflow File (Portanet\DetalleItemPortanet.xaml)" sap:VirtualizedContainerService.HintSize="486,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Portanet\DetalleItemPortanet.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <OutArgument x:TypeArguments="x:String" x:Key="out_causaRechazo">[CausaRechazo]</OutArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_IDProceso">[in_TransactionItem.SpecificContent("IDProceso").ToString]</InArgument>
@@ -159,7 +159,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeWorkflowFile>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NavegarDetalleProceso&amp;AñadirNotaOTRS - Invoke Workflow File (OTRS\NavegarDetalleProceso&amp;AñadirNotaOTRS.xaml)" sap:VirtualizedContainerService.HintSize="410,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="OTRS\NavegarDetalleProceso&amp;AñadirNotaOTRS.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NavegarDetalleProceso&amp;AñadirNotaOTRS - Invoke Workflow File (OTRS\NavegarDetalleProceso&amp;AñadirNotaOTRS.xaml)" sap:VirtualizedContainerService.HintSize="486,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="OTRS\NavegarDetalleProceso&amp;AñadirNotaOTRS.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_IDProceso">[in_TransactionItem.SpecificContent("IDProceso").ToString]</InArgument>
               <OutArgument x:TypeArguments="x:String" x:Key="out_Centralita">[Centralita]</OutArgument>
@@ -171,14 +171,14 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeWorkflowFile>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="RellenarNotaOTRS - Invoke Workflow File (OTRS\RellenarNotaOTRS.xaml)" sap:VirtualizedContainerService.HintSize="410,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="OTRS\RellenarNotaOTRS.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="RellenarNotaOTRS - Invoke Workflow File (OTRS\RellenarNotaOTRS.xaml)" sap:VirtualizedContainerService.HintSize="486,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="OTRS\RellenarNotaOTRS.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_CausaRechazo">[CausaRechazo]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_TipoProceso">[in_TransactionItem.SpecificContent("TipoProceso").ToString]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_Centralita">[Centralita]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <If Condition="[Centralita.ToLower.Contains(&quot;centralita&quot;)]" DisplayName="If - Contiene Centralita ?" sap:VirtualizedContainerService.HintSize="410,877" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[Centralita.ToLower.Contains(&quot;centralita&quot;)]" DisplayName="If - Contiene Centralita ?" sap:VirtualizedContainerService.HintSize="486,877" sap2010:WorkflowViewState.IdRef="If_1">
             <If.Then>
               <Sequence sap:VirtualizedContainerService.HintSize="492,169" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
@@ -270,7 +270,7 @@
                     <InArgument x:TypeArguments="x:String" x:Key="in_URL">[in_Config("URL_InfoNova").ToString]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="MessageMediaByAPI - Invoke Workflow File (MessageMedia\MessageMediaByAPI.xaml)" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="MessageMedia\MessageMediaByAPI.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="MessageMediaByAPI - Invoke Workflow File (MessageMedia\MessageMediaByAPI.xaml)" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="MessageMedia\MessageMediaByAPI.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="in_Telefono">[Telefono]</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="in_MessageMedia_EndPoint">[in_Config("API_MessageMedia_EndPoint").ToString]</InArgument>
@@ -382,7 +382,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="476,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="552,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -396,7 +396,7 @@
             <Rethrow sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Rethrow_6" />
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="476,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="552,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>

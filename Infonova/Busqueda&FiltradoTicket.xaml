@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2030,12274.000000000002</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2030,13100</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Busqueda_FiltradoTicket_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -127,7 +127,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="2040,12209" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="2040,13035" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="boo_ExistsVoipPort" />
     </Sequence.Variables>
@@ -137,27 +137,27 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1978,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Comenzando secuencia 'Busqueda&amp;FiltradoTicket' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1978,11734" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1978,12560" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Busqueda_FiltradoTicket" sap:VirtualizedContainerService.HintSize="1940,11480" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="Busqueda_FiltradoTicket" sap:VirtualizedContainerService.HintSize="1940,12306" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: IU Infonova - Buscar cliente" sap:VirtualizedContainerService.HintSize="1878,11369" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: IU Infonova - Buscar cliente" sap:VirtualizedContainerService.HintSize="1878,12195" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1844,11151" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1844,11977" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Accediendo a cliente" sap:VirtualizedContainerService.HintSize="1782,661" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Accediendo a cliente" sap:VirtualizedContainerService.HintSize="1782,662" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -210,7 +210,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,53" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_24">
                           <sap:WorkflowViewStateService.ViewState>
@@ -233,7 +233,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
                   </Sequence>
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1044,52" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1782,53" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                     <ui:CommentOut.Body>
                       <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_26">
                         <sap:WorkflowViewStateService.ViewState>
@@ -281,7 +281,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:CommentOut>
-                  <Sequence DisplayName="Tickets" sap:VirtualizedContainerService.HintSize="1782,10046" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence DisplayName="Tickets" sap:VirtualizedContainerService.HintSize="1782,10870" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="dt_Tickets" />
                     </Sequence.Variables>
@@ -291,7 +291,7 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="982,52" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1720,53" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_25">
                           <sap:WorkflowViewStateService.ViewState>
@@ -313,7 +313,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <uix:NSelectItem DisplayName="Select Item 'Casos'" sap:VirtualizedContainerService.HintSize="982,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Abierto" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
+                    <uix:NSelectItem DisplayName="Select Item 'Casos'" sap:VirtualizedContainerService.HintSize="1720,158" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Abierto" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="4">
                           <x:String>Abierto</x:String>
@@ -332,48 +332,48 @@
                         </uix:TargetAnchorable>
                       </uix:NSelectItem.Target>
                     </uix:NSelectItem>
-                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="982,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Tickets]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Column-0' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Id' ReferenceName='Id' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Categoria' ReferenceName='Categoría/nombre' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Creado el' ReferenceName='Creado el' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Vence el' ReferenceName='Vence el' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Prioridad' ReferenceName='Prioridad' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Asignado a' ReferenceName='Asignado a' ReferenceIdx='6'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Id' attr='fulltext' /&gt;&lt;column name='Categoría/nombre' attr='fulltext' /&gt;&lt;column name='Creado el' attr='fulltext' /&gt;&lt;column name='Vence el' attr='fulltext' /&gt;&lt;column name='Prioridad' attr='fulltext' /&gt;&lt;column name='Asignado a' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="982,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1720,91" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Tickets]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Column-0' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Id' ReferenceName='Id' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Categoria' ReferenceName='Categoría/nombre' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Creado el' ReferenceName='Creado el' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Vence el' ReferenceName='Vence el' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Prioridad' ReferenceName='Prioridad' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Asignado a' ReferenceName='Asignado a' ReferenceIdx='6'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Id' attr='fulltext' /&gt;&lt;column name='Categoría/nombre' attr='fulltext' /&gt;&lt;column name='Creado el' attr='fulltext' /&gt;&lt;column name='Vence el' attr='fulltext' /&gt;&lt;column name='Prioridad' attr='fulltext' /&gt;&lt;column name='Asignado a' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="1720,158" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
                       <uix:NExtractData.Target>
                         <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193610324/ticketing/cases/task/25880394?type=VOIP_V_NO_LINE&amp;category=ADAMO_TECHNICAL_SUPPORT" DesignTimeRectangle="453, 364, 1173, 47" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="aea2dfc9-dbc8-4676-8093-4a57ce7a91fd" InformativeScreenshot="b6637bd4c27e5bd935194417fdc2313b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NExtractData.Target>
                     </uix:NExtractData>
-                    <uix:NCheckState DisplayName="Check App State 'No se'" sap:VirtualizedContainerService.HintSize="982,741" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f">
+                    <uix:NCheckState DisplayName="Check App State 'No se'" sap:VirtualizedContainerService.HintSize="1720,746" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f">
                       <uix:NCheckState.IfExists>
-                        <Sequence sap:VirtualizedContainerService.HintSize="450,524" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                        <Sequence sap:VirtualizedContainerService.HintSize="450,527" sap2010:WorkflowViewState.IdRef="Sequence_28">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="aab29b53-7905-46a7-9b09-86dce299fb93" CvElementArea="1639, 197, 22, 23" CvType="CloseButton" DesignTimeRectangle="1641, 199, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='r6icon-size1color2 r6icon-close' isleaf='1' tag='DIV' aaname='' /&gt;" Guid="d4a099d3-8cbb-4f8a-90eb-d2a7af1cf92e" InformativeScreenshot="b26b0108e1e13bd9435fa55cf926e8e2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Casos' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/" />
-                          <Throw Exception="[new BusinessRuleException(&quot;No se han encontrado casos pendientes de procesar&quot;)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/" />
+                          <Throw Exception="[new BusinessRuleException(&quot;No se han encontrado casos pendientes de procesar&quot;)]" sap:VirtualizedContainerService.HintSize="388,91" sap2010:WorkflowViewState.IdRef="Throw_3" />
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.Target>
                         <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193681929/ticketing/cases" CVScreenId="9dbfecfa-5865-4870-955a-44aad3960ab9" CvTextArea="942, 351, 212, 15" CvTextArgument="No se han encontrado casos" CvType="Text" DesignTimeRectangle="453, 328, 1190, 80" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='No se han encontrado casos' parentid='ng-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='No se han encontrado casos' parentid='ng-app' tag='DIV' type='' class='r6table-empty ng-binding ng-scope' check:innerText='No se han encontrado casos' /&gt;" Guid="cd3f47f2-7444-493e-b5db-2a36e5c26c40" InformativeScreenshot="094960e79f3fd48f10e50dbf1cc5d093.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Casos' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NCheckState.Target>
                     </uix:NCheckState>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Tickets]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1720,7937" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Tickets]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1720,8752" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1686,7749" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1686,8564" sap2010:WorkflowViewState.IdRef="Sequence_10">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[CurrentRow(&quot;Categoria&quot;).ToString.Contains(&quot;Voip Port-in&quot;)]" sap:VirtualizedContainerService.HintSize="1644,7661" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If Condition="[CurrentRow(&quot;Categoria&quot;).ToString.Contains(&quot;Voip Port-in&quot;)]" sap:VirtualizedContainerService.HintSize="1644,8476" sap2010:WorkflowViewState.IdRef="If_1">
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="1610,7478" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <Sequence sap:VirtualizedContainerService.HintSize="1610,8293" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="id" />
                                     <Variable x:TypeArguments="x:String" Name="NumeroPortar" />
@@ -391,7 +391,7 @@
                                       <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="1568,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                  <Assign sap:VirtualizedContainerService.HintSize="1568,82" sap2010:WorkflowViewState.IdRef="Assign_1">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[id]</OutArgument>
                                     </Assign.To>
@@ -417,111 +417,128 @@
                                     </uix:NGetText.Target>
                                   </uix:NGetText>
                                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1568,145" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Comprobando que l Rango inicial y el Numero a portar es identico&quot;]" />
-                                  <If Condition="[in_RangoInicial.Equals(NumeroPortar.Replace(&quot;-&quot;,&quot;&quot;))]" sap:VirtualizedContainerService.HintSize="1568,6463" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <If Condition="[in_RangoInicial.Equals(NumeroPortar.Replace(&quot;-&quot;,&quot;&quot;))]" sap:VirtualizedContainerService.HintSize="1568,7279" sap2010:WorkflowViewState.IdRef="If_2">
                                     <If.Then>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="1534,6280" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="1534,7096" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="1492,83" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1492,53" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                                          <ui:CommentOut.Body>
+                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,194" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="450,83" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NSelectItem DisplayName="Select Item 'Acciones'" sap:VirtualizedContainerService.HintSize="754,158" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Aceptar tarea" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
+                                                  <uix:NSelectItem.Items>
+                                                    <scg:List x:TypeArguments="x:String" Capacity="2">
+                                                      <x:String>Aceptar tarea</x:String>
+                                                      <x:String>Asignar tarea a operador</x:String>
+                                                    </scg:List>
+                                                  </uix:NSelectItem.Items>
+                                                  <uix:NSelectItem.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193610324/ticketing/cases/task/25880394?type=VOIP_V_NO_LINE&amp;category=ADAMO_TECHNICAL_SUPPORT" DesignTimeRectangle="1537, 571, 80, 25" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='                  Acciones     ' parentid='ng-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                  Acciones     ' parentid='ng-app' tag='DIV' type='' class='' check:innerText='Acciones' /&gt;" Guid="637bdf42-a337-4fc1-89aa-6777cf81ec98" InformativeScreenshot="351eec2ad0dbadafc334dbb5381daf16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                  </uix:NSelectItem.Target>
+                                                </uix:NSelectItem>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Asignar a'" sap:VirtualizedContainerService.HintSize="754,158" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193840921/ticketing/cases/task/26124879?type=VOIP_V_NO_INCOMING_CALLS&amp;category=ADAMO_TECHNICAL_SUPPORT" CVScreenId="6513e403-fbea-4fe4-a17e-cf5a37b71ef6" CvElementArea="1509, 636, 101, 30" CvTextArea="1542, 643, 58, 16" CvTextArgument="Asignar A" CvType="Button" DesignTimeRectangle="1511, 637, 98, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tableRow='1' tag='BUTTON' aaname='*Asignar a*' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' tag='BUTTON' aaname='*Asignar a*' class='r6btn r6btn--action ng-scope' check:text='Asignar a' /&gt;" Guid="a948deae-c7cd-41b3-8dee-bfbdb5e317d8" InformativeScreenshot="6d0efda64dd5f7d84120894a89a10c38.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Fecha programada'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="754,219" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Text="[now.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" DesignTimeRectangle="478, 943, 135, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl id='portInDate' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='portInDate' type='' tag='INPUT' class='ng-pristine ng-valid ng-scope hasDatepicker ng-empty ng-valid-r6-date-is-not-in-past ng-touched' aaname='Fecha programada Portabilidad' /&gt;" Guid="2204a41b-5407-4303-88f7-44713dabbfff" InformativeScreenshot="9f8827e723392854a843cd333ed06370.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target DesignTimeRectangle="478, 927, 176, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='Fecha programada Portabilidad' tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Fecha programada Portabilidad' type='' tag='LABEL' class='ng-binding ng-scope' check:innerText='Fecha programada Portabilidad' /&gt;" Guid="37ad5fbf-4d13-4322-9a4b-2138159cf523" SearchSteps="FuzzySelector" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NTypeInto.Target>
+                                                </uix:NTypeInto>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cerrar tarea'" sap:VirtualizedContainerService.HintSize="754,158" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="8680d437-b93e-4601-868f-482d795db28c" CvElementArea="1507, 500, 116, 30" CvTextArea="1540, 508, 73, 12" CvTextArgument="Cerrar Tarea" CvType="Button" DesignTimeRectangle="1509, 501, 113, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='*Cerrar*tarea*' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='                   Cerrar  tarea             ' type='button' tag='BUTTON' class='r6btn r6btn--action ng-scope' check:innerText='Cerrar Tarea' /&gt;" Guid="476681d2-73d9-47e5-8b2b-1544f95cc747" InformativeScreenshot="71ae8fde96d8bd4de013f1d4b6471e1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                                                  </uix:NClick.Target>
+                                                </uix:NClick>
+                                                <uix:NCheckState DisplayName="Check App State 'Guardar cambios'" sap:VirtualizedContainerService.HintSize="754,947" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f">
+                                                  <uix:NCheckState.IfExists>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Descripción cerrada'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Text="Portado" Version="V3">
+                                                        <uix:NTypeInto.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="3e7ab230-8c6f-4049-97e9-0aa6096607a4" CvElementArea="862, 349, 202, 85" CvType="InputBox" DesignTimeRectangle="863, 349, 200, 83" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='ng-pristine ng-scope ng-empty ng-invalid ng-invalid-required ng-valid-maxlength ng-touched' aaname='' /&gt;" Guid="74f64409-27ff-4762-83cb-0582fc2ce3e2" InformativeScreenshot="2e1cdbd05777c11d94d9eeb2ea9337c6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                            <uix:TargetAnchorable.Anchors>
+                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                <uix:Target CVScreenId="3e7ab230-8c6f-4049-97e9-0aa6096607a4" CvTextArea="862, 334, 119, 16" CvTextArgument="Descripcion cerrada*" CvType="Text" DesignTimeRectangle="863, 333, 200, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='ng-binding ng-scope' aaname='Descripción cerrada' check:innerText='Descripción cerrada' /&gt;" Guid="a0df041f-2544-485e-8dc2-bc5743969697" SearchSteps="FuzzySelector, CV" />
+                                                              </scg:List>
+                                                            </uix:TargetAnchorable.Anchors>
+                                                          </uix:TargetAnchorable>
+                                                        </uix:NTypeInto.Target>
+                                                      </uix:NTypeInto>
+                                                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  resolution-value'" sap:VirtualizedContainerService.HintSize="388,156" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Éxito">
+                                                        <ui:SelectItem.Items>
+                                                          <scg:List x:TypeArguments="x:String" Capacity="4">
+                                                            <x:String>Seleccione...</x:String>
+                                                            <x:String>Cancelar</x:String>
+                                                            <x:String>Usar número nuevo</x:String>
+                                                            <x:String>Éxito</x:String>
+                                                          </scg:List>
+                                                        </ui:SelectItem.Items>
+                                                        <ui:SelectItem.Target>
+                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d1e5278-4e5f-43b2-a3bd-eb13fa8662ea" InformativeScreenshot="93633fbff3fe98bcb30bed00d7a5d993" Selector="&lt;webctrl id='resolution-value' tag='SELECT' /&gt;">
+                                                            <ui:Target.TimeoutMS>
+                                                              <InArgument x:TypeArguments="x:Int32" />
+                                                            </ui:Target.TimeoutMS>
+                                                            <ui:Target.WaitForReady>
+                                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                            </ui:Target.WaitForReady>
+                                                          </ui:Target>
+                                                        </ui:SelectItem.Target>
+                                                      </ui:SelectItem>
+                                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Guardar cambios'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
+                                                        <uix:NClick.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" CVScreenId="d96c5ffe-9248-49ee-9534-1b0cc61d69df" CvElementArea="977, 497, 123, 30" CvTextArea="987, 505, 103, 13" CvTextArgument="Guardar Cambios" CvType="Button" DesignTimeRectangle="979, 499, 119, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='*Guardar cambios*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Guardar cambios              ' tag='BUTTON' type='button' class='r6btn ng-scope is-disabled' check:innerText='Guardar Cambios' /&gt;" Guid="ab52990a-fa00-489a-9fa1-5472f68a25eb" InformativeScreenshot="513833e5f0cf46fa8395e7c2a2800141.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                        </uix:NClick.Target>
+                                                      </uix:NClick>
+                                                    </Sequence>
+                                                  </uix:NCheckState.IfExists>
+                                                  <uix:NCheckState.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193808142/ticketing/cases/task/26073939?type=ADAMO_VOIP_PORTIN&amp;category=Provisioning" CVScreenId="d27fce49-790e-4ea9-9b1f-d8a3e90007c7" CvTextArea="819, 272, 93, 15" CvTextArgument="Guardar Cambios" CvType="Text" DesignTimeRectangle="966, 499, 119, 27" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Guardar cambios*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Guardar cambios*' tag='BUTTON' type='button' class='r6btn ng-scope is-disabled' check:text='Guardar cambios' /&gt;" Guid="e0d228bd-ae8d-4fb3-b76a-67268e924f8a" InformativeScreenshot="8df619b681371b480d9160bbb849c2af.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                                                  </uix:NCheckState.Target>
+                                                </uix:NCheckState>
+                                              </Sequence>
+                                            </Sequence>
+                                          </ui:CommentOut.Body>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NSelectItem DisplayName="Select Item 'Acciones'" sap:VirtualizedContainerService.HintSize="754,158" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Aceptar tarea" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
-                                            <uix:NSelectItem.Items>
-                                              <scg:List x:TypeArguments="x:String" Capacity="2">
-                                                <x:String>Aceptar tarea</x:String>
-                                                <x:String>Asignar tarea a operador</x:String>
-                                              </scg:List>
-                                            </uix:NSelectItem.Items>
-                                            <uix:NSelectItem.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193610324/ticketing/cases/task/25880394?type=VOIP_V_NO_LINE&amp;category=ADAMO_TECHNICAL_SUPPORT" DesignTimeRectangle="1537, 571, 80, 25" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='                  Acciones     ' parentid='ng-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                  Acciones     ' parentid='ng-app' tag='DIV' type='' class='' check:innerText='Acciones' /&gt;" Guid="637bdf42-a337-4fc1-89aa-6777cf81ec98" InformativeScreenshot="351eec2ad0dbadafc334dbb5381daf16.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                                            </uix:NSelectItem.Target>
-                                          </uix:NSelectItem>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Asignar a'" sap:VirtualizedContainerService.HintSize="754,158" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
-                                            <uix:NClick.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193840921/ticketing/cases/task/26124879?type=VOIP_V_NO_INCOMING_CALLS&amp;category=ADAMO_TECHNICAL_SUPPORT" CVScreenId="6513e403-fbea-4fe4-a17e-cf5a37b71ef6" CvElementArea="1509, 636, 101, 30" CvTextArea="1542, 643, 58, 16" CvTextArgument="Asignar A" CvType="Button" DesignTimeRectangle="1511, 637, 98, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tableRow='1' tag='BUTTON' aaname='*Asignar a*' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' tag='BUTTON' aaname='*Asignar a*' class='r6btn r6btn--action ng-scope' check:text='Asignar a' /&gt;" Guid="a948deae-c7cd-41b3-8dee-bfbdb5e317d8" InformativeScreenshot="6d0efda64dd5f7d84120894a89a10c38.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
-                                            </uix:NClick.Target>
-                                          </uix:NClick>
-                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Fecha programada'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="754,219" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Text="[now.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
-                                            <uix:NTypeInto.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" DesignTimeRectangle="478, 943, 135, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl id='portInDate' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='portInDate' type='' tag='INPUT' class='ng-pristine ng-valid ng-scope hasDatepicker ng-empty ng-valid-r6-date-is-not-in-past ng-touched' aaname='Fecha programada Portabilidad' /&gt;" Guid="2204a41b-5407-4303-88f7-44713dabbfff" InformativeScreenshot="9f8827e723392854a843cd333ed06370.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-                                                <uix:TargetAnchorable.Anchors>
-                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                    <uix:Target DesignTimeRectangle="478, 927, 176, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='Fecha programada Portabilidad' tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Fecha programada Portabilidad' type='' tag='LABEL' class='ng-binding ng-scope' check:innerText='Fecha programada Portabilidad' /&gt;" Guid="37ad5fbf-4d13-4322-9a4b-2138159cf523" SearchSteps="FuzzySelector" />
-                                                  </scg:List>
-                                                </uix:TargetAnchorable.Anchors>
-                                              </uix:TargetAnchorable>
-                                            </uix:NTypeInto.Target>
-                                          </uix:NTypeInto>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cerrar tarea'" sap:VirtualizedContainerService.HintSize="754,158" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
-                                            <uix:NClick.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="8680d437-b93e-4601-868f-482d795db28c" CvElementArea="1507, 500, 116, 30" CvTextArea="1540, 508, 73, 12" CvTextArgument="Cerrar Tarea" CvType="Button" DesignTimeRectangle="1509, 501, 113, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='*Cerrar*tarea*' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='                   Cerrar  tarea             ' type='button' tag='BUTTON' class='r6btn r6btn--action ng-scope' check:innerText='Cerrar Tarea' /&gt;" Guid="476681d2-73d9-47e5-8b2b-1544f95cc747" InformativeScreenshot="71ae8fde96d8bd4de013f1d4b6471e1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
-                                            </uix:NClick.Target>
-                                          </uix:NClick>
-                                          <uix:NCheckState DisplayName="Check App State 'Guardar cambios'" sap:VirtualizedContainerService.HintSize="754,947" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f">
-                                            <uix:NCheckState.IfExists>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                                                <sap:WorkflowViewStateService.ViewState>
-                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                  </scg:Dictionary>
-                                                </sap:WorkflowViewStateService.ViewState>
-                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Descripción cerrada'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Text="Portado" Version="V3">
-                                                  <uix:NTypeInto.Target>
-                                                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="3e7ab230-8c6f-4049-97e9-0aa6096607a4" CvElementArea="862, 349, 202, 85" CvType="InputBox" DesignTimeRectangle="863, 349, 200, 83" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='ng-pristine ng-scope ng-empty ng-invalid ng-invalid-required ng-valid-maxlength ng-touched' aaname='' /&gt;" Guid="74f64409-27ff-4762-83cb-0582fc2ce3e2" InformativeScreenshot="2e1cdbd05777c11d94d9eeb2ea9337c6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                                      <uix:TargetAnchorable.Anchors>
-                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                          <uix:Target CVScreenId="3e7ab230-8c6f-4049-97e9-0aa6096607a4" CvTextArea="862, 334, 119, 16" CvTextArgument="Descripcion cerrada*" CvType="Text" DesignTimeRectangle="863, 333, 200, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='ng-binding ng-scope' aaname='Descripción cerrada' check:innerText='Descripción cerrada' /&gt;" Guid="a0df041f-2544-485e-8dc2-bc5743969697" SearchSteps="FuzzySelector, CV" />
-                                                        </scg:List>
-                                                      </uix:TargetAnchorable.Anchors>
-                                                    </uix:TargetAnchorable>
-                                                  </uix:NTypeInto.Target>
-                                                </uix:NTypeInto>
-                                                <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  resolution-value'" sap:VirtualizedContainerService.HintSize="388,156" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Éxito">
-                                                  <ui:SelectItem.Items>
-                                                    <scg:List x:TypeArguments="x:String" Capacity="4">
-                                                      <x:String>Seleccione...</x:String>
-                                                      <x:String>Cancelar</x:String>
-                                                      <x:String>Usar número nuevo</x:String>
-                                                      <x:String>Éxito</x:String>
-                                                    </scg:List>
-                                                  </ui:SelectItem.Items>
-                                                  <ui:SelectItem.Target>
-                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d1e5278-4e5f-43b2-a3bd-eb13fa8662ea" InformativeScreenshot="93633fbff3fe98bcb30bed00d7a5d993" Selector="&lt;webctrl id='resolution-value' tag='SELECT' /&gt;">
-                                                      <ui:Target.TimeoutMS>
-                                                        <InArgument x:TypeArguments="x:Int32" />
-                                                      </ui:Target.TimeoutMS>
-                                                      <ui:Target.WaitForReady>
-                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                                                      </ui:Target.WaitForReady>
-                                                    </ui:Target>
-                                                  </ui:SelectItem.Target>
-                                                </ui:SelectItem>
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Guardar cambios'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" Version="V3">
-                                                  <uix:NClick.Target>
-                                                    <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" CVScreenId="d96c5ffe-9248-49ee-9534-1b0cc61d69df" CvElementArea="977, 497, 123, 30" CvTextArea="987, 505, 103, 13" CvTextArgument="Guardar Cambios" CvType="Button" DesignTimeRectangle="979, 499, 119, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='*Guardar cambios*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Guardar cambios              ' tag='BUTTON' type='button' class='r6btn ng-scope is-disabled' check:innerText='Guardar Cambios' /&gt;" Guid="ab52990a-fa00-489a-9fa1-5472f68a25eb" InformativeScreenshot="513833e5f0cf46fa8395e7c2a2800141.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                                                  </uix:NClick.Target>
-                                                </uix:NClick>
-                                              </Sequence>
-                                            </uix:NCheckState.IfExists>
-                                            <uix:NCheckState.Target>
-                                              <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193808142/ticketing/cases/task/26073939?type=ADAMO_VOIP_PORTIN&amp;category=Provisioning" CVScreenId="d27fce49-790e-4ea9-9b1f-d8a3e90007c7" CvTextArea="819, 272, 93, 15" CvTextArgument="Guardar Cambios" CvType="Text" DesignTimeRectangle="966, 499, 119, 27" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Guardar cambios*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Guardar cambios*' tag='BUTTON' type='button' class='r6btn ng-scope is-disabled' check:text='Guardar cambios' /&gt;" Guid="e0d228bd-ae8d-4fb3-b76a-67268e924f8a" InformativeScreenshot="8df619b681371b480d9160bbb849c2af.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
-                                            </uix:NCheckState.Target>
-                                          </uix:NCheckState>
-                                        </Sequence>
-                                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: IU Infonova - Detalles de la tarea" sap:VirtualizedContainerService.HintSize="1492,4965" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="a8ba6eed-0064-4144-a35c-a673671db2ff" Version="V2">
+                                        </ui:CommentOut>
+                                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: IU Infonova - Detalles de la tarea" sap:VirtualizedContainerService.HintSize="1492,5810" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="a8ba6eed-0064-4144-a35c-a673671db2ff" Version="V2">
                                           <uix:NApplicationCard.Body>
                                             <ActivityAction x:TypeArguments="x:Object">
                                               <ActivityAction.Argument>
                                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                               </ActivityAction.Argument>
-                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1458,4667" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1458,5592" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                                 <Sequence.Variables>
                                                   <Variable x:TypeArguments="x:String" Name="test" />
                                                   <Variable x:TypeArguments="x:String" Name="UsuarioAsignado" />
@@ -536,14 +553,16 @@
                                                     <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193840921/ticketing/cases/task/26124879?type=VOIP_V_NO_INCOMING_CALLS&amp;category=ADAMO_TECHNICAL_SUPPORT" CVScreenId="788ccff8-dce5-4765-b681-ec5575a1c297" CvTextArea="1461, 576, 143, 16" CvType="AnyWordGroup" DesignTimeRectangle="1036, 575, 568, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='DIV' innertext='*Assigned to:*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='DIV' aaname='                                                                                                ' /&gt;" Guid="b4d92cf8-c81c-4e6a-aeb1-6f2fad4a8a54" ImageBase64="" InformativeScreenshot="7c51ebffe921dc20b7008fb8b0069f37.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                                   </uix:NGetText.Target>
                                                 </uix:NGetText>
-                                                <If Condition="[UsuarioAsignado.Contains(&quot;robot.uipath@adamo.es&quot;)]" sap:VirtualizedContainerService.HintSize="1396,4354" sap2010:WorkflowViewState.IdRef="If_5">
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1396,145" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Comprobando que el usuario: &quot; + UsuarioAsignado + &quot; corresponde con el usuario del robot&quot;]" />
+                                                <If Condition="[UsuarioAsignado.Contains(&quot;robot.uipath@adamo.es&quot;)]" sap:VirtualizedContainerService.HintSize="1396,5094" sap2010:WorkflowViewState.IdRef="If_5">
                                                   <If.Then>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="796,1492" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="796,1862" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
+                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="754,145" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Usuario asignado = usuario robot, cerramos tarea&quot;]" />
                                                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Fecha programada'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="754,219" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="a8ba6eed-0064-4144-a35c-a673671db2ff" Text="[now.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
                                                         <uix:NTypeInto.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" DesignTimeRectangle="478, 943, 135, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl id='portInDate' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='portInDate' type='' tag='INPUT' class='ng-pristine ng-valid ng-scope hasDatepicker ng-empty ng-valid-r6-date-is-not-in-past ng-touched' aaname='Fecha programada Portabilidad' /&gt;" Guid="2204a41b-5407-4303-88f7-44713dabbfff" InformativeScreenshot="9f8827e723392854a843cd333ed06370.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
@@ -560,9 +579,9 @@
                                                           <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="8680d437-b93e-4601-868f-482d795db28c" CvElementArea="1507, 500, 116, 30" CvTextArea="1540, 508, 73, 12" CvTextArgument="Cerrar Tarea" CvType="Button" DesignTimeRectangle="1509, 501, 113, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='*Cerrar*tarea*' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='                   Cerrar  tarea             ' type='button' tag='BUTTON' class='r6btn r6btn--action ng-scope' check:innerText='Cerrar Tarea' /&gt;" Guid="476681d2-73d9-47e5-8b2b-1544f95cc747" InformativeScreenshot="71ae8fde96d8bd4de013f1d4b6471e1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                                                         </uix:NClick.Target>
                                                       </uix:NClick>
-                                                      <uix:NCheckState DisplayName="Check App State 'Guardar cambios'" sap:VirtualizedContainerService.HintSize="754,947" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="a8ba6eed-0064-4144-a35c-a673671db2ff">
+                                                      <uix:NCheckState DisplayName="Check App State 'Guardar cambios'" sap:VirtualizedContainerService.HintSize="754,1132" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="a8ba6eed-0064-4144-a35c-a673671db2ff">
                                                         <uix:NCheckState.IfExists>
-                                                          <Sequence sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="450,913" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -604,6 +623,7 @@
                                                                 <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" CVScreenId="d96c5ffe-9248-49ee-9534-1b0cc61d69df" CvElementArea="977, 497, 123, 30" CvTextArea="987, 505, 103, 13" CvTextArgument="Guardar Cambios" CvType="Button" DesignTimeRectangle="979, 499, 119, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='*Guardar cambios*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Guardar cambios              ' tag='BUTTON' type='button' class='r6btn ng-scope is-disabled' check:innerText='Guardar Cambios' /&gt;" Guid="ab52990a-fa00-489a-9fa1-5472f68a25eb" InformativeScreenshot="513833e5f0cf46fa8395e7c2a2800141.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                                                               </uix:NClick.Target>
                                                             </uix:NClick>
+                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,145" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Tarea cerrada con éxito&quot;]" />
                                                           </Sequence>
                                                         </uix:NCheckState.IfExists>
                                                         <uix:NCheckState.Target>
@@ -613,7 +633,7 @@
                                                     </Sequence>
                                                   </If.Then>
                                                   <If.Else>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="1362,2679" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="1362,3049" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -624,9 +644,9 @@
                                                           <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193840921/ticketing/cases/task/26124879?type=VOIP_V_NO_INCOMING_CALLS&amp;category=ADAMO_TECHNICAL_SUPPORT" CVScreenId="7ee0c5ea-f551-47c9-b51f-b46076d16c06" CvElementArea="1509, 636, 101, 30" CvTextArea="1542, 643, 58, 16" CvTextArgument="Asignar A" CvType="Button" DesignTimeRectangle="1511, 637, 98, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tableRow='1' tag='BUTTON' aaname='*Asignar a*' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' tag='BUTTON' aaname='*Asignar a*' class='r6btn r6btn--action ng-scope' check:text='Asignar a' /&gt;" Guid="54048cc1-270b-431d-a26a-0662d47da533" InformativeScreenshot="6d0efda64dd5f7d84120894a89a10c38.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                                         </uix:NClick.Target>
                                                       </uix:NClick>
-                                                      <uix:NCheckState DisplayName="Check App State 'Asignar tarea #26124879'" sap:VirtualizedContainerService.HintSize="1320,2393" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="a8ba6eed-0064-4144-a35c-a673671db2ff" Version="V3">
+                                                      <uix:NCheckState DisplayName="Check App State 'Asignar tarea #26124879'" sap:VirtualizedContainerService.HintSize="1320,2763" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="a8ba6eed-0064-4144-a35c-a673671db2ff" Version="V3">
                                                         <uix:NCheckState.IfExists>
-                                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="816,2174" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="816,2544" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -653,6 +673,7 @@
                                                                 <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193840921/ticketing/cases/task/26124879?type=VOIP_V_NO_INCOMING_CALLS&amp;category=ADAMO_TECHNICAL_SUPPORT" CVScreenId="e2c39320-fea4-4909-aec2-770041794869" CvElementArea="985, 479, 101, 30" CvTextArea="1026, 488, 20, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="987, 481, 98, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' OK                            ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' OK                            ' tag='BUTTON' type='button' class='r6btn is-disabled' check:innerText='OK' /&gt;" Guid="4b26fd34-20e5-4f5e-aed5-16a99576423d" InformativeScreenshot="cdea9e57bab0beee9885c304c13a6548.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                                                               </uix:NClick.Target>
                                                             </uix:NClick>
+                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="754,145" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Tarea asignada al robot con éxito&quot;]" />
                                                             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Fecha programada'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="754,219" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="a8ba6eed-0064-4144-a35c-a673671db2ff" Text="[now.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
                                                               <uix:NTypeInto.Target>
                                                                 <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" DesignTimeRectangle="478, 943, 135, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl id='portInDate' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='portInDate' type='' tag='INPUT' class='ng-pristine ng-valid ng-scope hasDatepicker ng-empty ng-valid-r6-date-is-not-in-past ng-touched' aaname='Fecha programada Portabilidad' /&gt;" Guid="2204a41b-5407-4303-88f7-44713dabbfff" InformativeScreenshot="9f8827e723392854a843cd333ed06370.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
@@ -669,9 +690,9 @@
                                                                 <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes#" CVScreenId="8680d437-b93e-4601-868f-482d795db28c" CvElementArea="1507, 500, 116, 30" CvTextArea="1540, 508, 73, 12" CvTextArgument="Cerrar Tarea" CvType="Button" DesignTimeRectangle="1509, 501, 113, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='*Cerrar*tarea*' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='                   Cerrar  tarea             ' type='button' tag='BUTTON' class='r6btn r6btn--action ng-scope' check:innerText='Cerrar Tarea' /&gt;" Guid="476681d2-73d9-47e5-8b2b-1544f95cc747" InformativeScreenshot="71ae8fde96d8bd4de013f1d4b6471e1a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
                                                               </uix:NClick.Target>
                                                             </uix:NClick>
-                                                            <uix:NCheckState DisplayName="Check App State 'Guardar cambios'" sap:VirtualizedContainerService.HintSize="754,947" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="a8ba6eed-0064-4144-a35c-a673671db2ff">
+                                                            <uix:NCheckState DisplayName="Check App State 'Guardar cambios'" sap:VirtualizedContainerService.HintSize="754,1132" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="a8ba6eed-0064-4144-a35c-a673671db2ff">
                                                               <uix:NCheckState.IfExists>
-                                                                <Sequence sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                                <Sequence sap:VirtualizedContainerService.HintSize="450,913" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -713,6 +734,7 @@
                                                                       <uix:TargetAnchorable BrowserURL="https://www.portanet.net/ConsolaMensajes" CVScreenId="d96c5ffe-9248-49ee-9534-1b0cc61d69df" CvElementArea="977, 497, 123, 30" CvTextArea="987, 505, 103, 13" CvTextArgument="Guardar Cambios" CvType="Button" DesignTimeRectangle="979, 499, 119, 27" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='*Guardar cambios*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Guardar cambios              ' tag='BUTTON' type='button' class='r6btn ng-scope is-disabled' check:innerText='Guardar Cambios' /&gt;" Guid="ab52990a-fa00-489a-9fa1-5472f68a25eb" InformativeScreenshot="513833e5f0cf46fa8395e7c2a2800141.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Detalles de la tarea' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                                                                     </uix:NClick.Target>
                                                                   </uix:NClick>
+                                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,145" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Tarea cerrada con éxito&quot;]" />
                                                                 </Sequence>
                                                               </uix:NCheckState.IfExists>
                                                               <uix:NCheckState.Target>
@@ -722,12 +744,13 @@
                                                           </Sequence>
                                                         </uix:NCheckState.IfExists>
                                                         <uix:NCheckState.IfNotExists>
-                                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,206" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,391" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
+                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,145" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Error" Message="[&quot;Error al asignar la tarea en InfoNova&quot;]" />
                                                             <Throw Exception="[new BusinessRuleException(&quot;Error al asignar la tarea en Infonova&quot;)]" sap:VirtualizedContainerService.HintSize="388,91" sap2010:WorkflowViewState.IdRef="Throw_5" />
                                                           </Sequence>
                                                         </uix:NCheckState.IfNotExists>
@@ -751,16 +774,16 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </uix:NApplicationCard>
-                                        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1492,999" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                                        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1492,1000" sap2010:WorkflowViewState.IdRef="RetryScope_1">
                                           <ui:RetryScope.ActivityBody>
                                             <ActivityAction>
-                                              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="558,822" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="558,823" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <Sequence DisplayName="RecogerTelefono" sap:VirtualizedContainerService.HintSize="496,711" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                <Sequence DisplayName="RecogerTelefono" sap:VirtualizedContainerService.HintSize="496,712" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                                   <Sequence.Variables>
                                                     <Variable x:TypeArguments="x:String" Name="Telefono" />
                                                   </Sequence.Variables>
@@ -776,7 +799,7 @@
                                                     </uix:NClick.Target>
                                                   </uix:NClick>
                                                   <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[&quot;https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/&quot;+ in_Titulo+&quot;/account/profile&quot;]" />
-                                                  <uix:NGetText DisplayName="Get Text '623545876'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" TextString="[Telefono]" Version="V3">
+                                                  <uix:NGetText DisplayName="Get Text '623545876'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="40dc6c48-94ba-4f4a-b551-83876ea3838f" TextString="[Telefono]" Version="V3">
                                                     <uix:NGetText.Target>
                                                       <uix:TargetAnchorable BrowserURL="https://mi.adamo.es/r6-ui/adamo_prod/index#!/customermanagement/customer/1193610324/account/profile" DesignTimeRectangle="1232, 389, 384, 16" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='ng-app' tag='SPAN' class='r6widget-list-item-title ng-binding r6bold' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ng-app' tag='SPAN' class='r6widget-list-item-title ng-binding r6bold' type='' /&gt;" Guid="dfdc2d6a-f962-46f6-8869-8e1a06b794c4" ImageBase64="" InformativeScreenshot="b445490c743f390e15e1084af3a681fd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IU Infonova - Perfil del cliente' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                                     </uix:NGetText.Target>
@@ -856,7 +879,7 @@
               </ActivityAction>
             </uix:NApplicationCard.Body>
             <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASYSURBVFhHxde/q9ZVHAdwTYSLii3XErUQHLSLUouL2aAYCAUONrQkcRe9EI0ud3I0EFToxyK0BA0holKhBC6CUUTS5iL0B9QWNMTt/Tp8Tj3f+/y4T0t+4M33/Pic87zP59c5z6a1tbVniomD/yf+bcwpf765uBSsVlf/arBcXf2VYKG6M2VuAtnweLC72ruCX9tEJG0EzlZ7n7lgc/W3+k6T/0LgcnC1uvqPg0PVvhWcq7bTX9Emad8MzlR3TGYSyML9wbZq7wyeBkeq/yC4VO2HwflqPwkuVPtE8HMw1QobEWDa28GW6l8PHlX7YnCr2si8E+wO/gr2BHuDP4LTpbMlsN9+/S4bEbDoi+BuwAIvBL8HTnY4eFp6CLwRvBvcr7EbwXfB5mB7YB+HaRbtMpFAlM4EzWz5WvxL8E2AEB/fqzkuQQzBV4LPgveDI8FvwcuBgLWeTrPkqIwRiNLWQODw3enACWzyU/Bx8FzwY3A0+DRwckFI54cAIWTfC54PrPs22Fn7mxfQx/XHCHSJAjPzITM6ic2+Dz4M/PhXwdvBBwHCLwZfBqcCczsC+kizHPeJIVYTCy2lBwQyuBC0/CVpCyS+ZE4nsun94K3gk+BgcDJ4LTgQHAu+Dl4K6CHLYtwmdh4FLYu6rCdAURG5ElwI9lDKl0+Z1cls/nmwve2wTjK+WPNIshR33QtOlEqT9LlsaUCgJlQyROSzlHISgcV3zOuEi015imRe4LIQwkdrTNZIXRmjiDno6hiBUYmCvJZaoluA8fGxmp4p0eMeMSJQ+R0E66WgVVAyIJCJ5eBscC44HyguolyKCSKBdqDWzpToiQ0Ban3LgEmynoDoBEyVV+aCOzUm2l+ttTOFXulbpwb0vexrrP3WgMA0iSL/O4kTnazhmRI9WcFigo0FrWdRwc3CLL08kUAmDgV8hWn3H1/y6cFSmynRez0QM2JHDImllvujMiAQhdVAdIpS5hK1hynm24uP6J6Ygl0yLxVli6xhPVkkm2SV7JJl++iuJ+Cls6vtUpK+iiiPe/mV3/J8YipmXAqaVy8QVj/6Fe6W5AJ1xkFXBgRGJZOKj8qlgmGsoqlsTmJzJ1T5+FrAiXqpx0JI0lM5VVCVVEXdW9vb3x2zMEYgg3JfhPK72i391HI1XW23qZMxLx8LNNEuQMVIKz4BsvTdIe4Sd4q7ZVARJxHw9vsoaLnrG7jN3Go2cyJmNS7ARLlgFeUCtZdfFkPaOjpO7HZ1yyLcrvsxAqMSJSeXw+5zmzgJc3KPwBLdUqw/WPoDhfm5zXrkrd9Rc677f96IUwlEaVvgBeMlI7CcgBlv1LwfkVpO/qDGuE3NF7hih/sQQ9A+Gz9IukTZg/RaX5Qv8/GhK1o0Synxorh0AlxxsdoC+Hq1WcJhrumPylQCo5KFzMZ3LYDylUpPqu3OeFhtxauT4SYW6bHEooMHKZmXgDfizerqy+OVaiur/XWsgj7WJmnLpsvVnShzESDZqD9SxYIi0ipZvmr66B8Wc62Y5ctF7e03TeYm0CUbera105O0XeGjBJTzpepuKAMCzwZrm/4GDmiQnk4g7JMAAAAASUVORK5CYII=" InformativeScreenshot="32a6615cbe80a9fd614bef479704c6b8.jpg" Selector="&lt;html app='chrome.exe' title='IU Infonova - Buscar cliente' /&gt;" Title="IU Infonova - Buscar cliente" Url="[in_URL + &quot;index#!/customermanagement/customer/&quot;]" />
+              <uix:TargetApp Area="-8, -8, 1910, 919" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASYSURBVFhHxde/q9ZVHAdwTYSLii3XErUQHLSLUouL2aAYCAUONrQkcRe9EI0ud3I0EFToxyK0BA0holKhBC6CUUTS5iL0B9QWNMTt/Tp8Tj3f+/y4T0t+4M33/Pic87zP59c5z6a1tbVniomD/yf+bcwpf765uBSsVlf/arBcXf2VYKG6M2VuAtnweLC72ruCX9tEJG0EzlZ7n7lgc/W3+k6T/0LgcnC1uvqPg0PVvhWcq7bTX9Emad8MzlR3TGYSyML9wbZq7wyeBkeq/yC4VO2HwflqPwkuVPtE8HMw1QobEWDa28GW6l8PHlX7YnCr2si8E+wO/gr2BHuDP4LTpbMlsN9+/S4bEbDoi+BuwAIvBL8HTnY4eFp6CLwRvBvcr7EbwXfB5mB7YB+HaRbtMpFAlM4EzWz5WvxL8E2AEB/fqzkuQQzBV4LPgveDI8FvwcuBgLWeTrPkqIwRiNLWQODw3enACWzyU/Bx8FzwY3A0+DRwckFI54cAIWTfC54PrPs22Fn7mxfQx/XHCHSJAjPzITM6ic2+Dz4M/PhXwdvBBwHCLwZfBqcCczsC+kizHPeJIVYTCy2lBwQyuBC0/CVpCyS+ZE4nsun94K3gk+BgcDJ4LTgQHAu+Dl4K6CHLYtwmdh4FLYu6rCdAURG5ElwI9lDKl0+Z1cls/nmwve2wTjK+WPNIshR33QtOlEqT9LlsaUCgJlQyROSzlHISgcV3zOuEi015imRe4LIQwkdrTNZIXRmjiDno6hiBUYmCvJZaoluA8fGxmp4p0eMeMSJQ+R0E66WgVVAyIJCJ5eBscC44HyguolyKCSKBdqDWzpToiQ0Ban3LgEmynoDoBEyVV+aCOzUm2l+ttTOFXulbpwb0vexrrP3WgMA0iSL/O4kTnazhmRI9WcFigo0FrWdRwc3CLL08kUAmDgV8hWn3H1/y6cFSmynRez0QM2JHDImllvujMiAQhdVAdIpS5hK1hynm24uP6J6Ygl0yLxVli6xhPVkkm2SV7JJl++iuJ+Cls6vtUpK+iiiPe/mV3/J8YipmXAqaVy8QVj/6Fe6W5AJ1xkFXBgRGJZOKj8qlgmGsoqlsTmJzJ1T5+FrAiXqpx0JI0lM5VVCVVEXdW9vb3x2zMEYgg3JfhPK72i391HI1XW23qZMxLx8LNNEuQMVIKz4BsvTdIe4Sd4q7ZVARJxHw9vsoaLnrG7jN3Go2cyJmNS7ARLlgFeUCtZdfFkPaOjpO7HZ1yyLcrvsxAqMSJSeXw+5zmzgJc3KPwBLdUqw/WPoDhfm5zXrkrd9Rc677f96IUwlEaVvgBeMlI7CcgBlv1LwfkVpO/qDGuE3NF7hih/sQQ9A+Gz9IukTZg/RaX5Qv8/GhK1o0Synxorh0AlxxsdoC+Hq1WcJhrumPylQCo5KFzMZ3LYDylUpPqu3OeFhtxauT4SYW6bHEooMHKZmXgDfizerqy+OVaiur/XWsgj7WJmnLpsvVnShzESDZqD9SxYIi0ipZvmr66B8Wc62Y5ctF7e03TeYm0CUbera105O0XeGjBJTzpepuKAMCzwZrm/4GDmiQnk4g7JMAAAAASUVORK5CYII=" InformativeScreenshot="9cd306e295992ce05669f1f2a0f325e1.jpg" Selector="&lt;html app='chrome.exe' url='*mi.adamo.es*' /&gt;" Title="IU Infonova - Buscar cliente" Url="*mi.adamo.es*" />
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
         </Sequence>
